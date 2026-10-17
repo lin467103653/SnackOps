@@ -1,0 +1,709 @@
+[
+  {
+    "id": "query_products",
+    "name": "商品查询",
+    "description": "按关键词/类目/价格带/过敏原过滤商品，返回真实库存、配料与营养信息",
+    "kind": "查询",
+    "riskLevel": "低",
+    "enabled": true,
+    "version": "1.2.0",
+    "timeoutMs": 2000,
+    "sampleInput": {
+      "inStockOnly": true,
+      "maxPrice": 60,
+      "limit": 3
+    },
+    "inputSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "keyword": {
+          "type": "string",
+          "description": "按名称、口味、标签、配料模糊匹配"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "坚果炒货",
+            "肉干卤味",
+            "饼干糕点",
+            "果干蜜饯",
+            "糖巧布丁",
+            "冲饮谷物"
+          ]
+        },
+        "minPrice": {
+          "type": "number",
+          "minimum": 0
+        },
+        "maxPrice": {
+          "type": "number",
+          "minimum": 0
+        },
+        "inStockOnly": {
+          "type": "boolean",
+          "description": "只返回在售且有库存的商品"
+        },
+        "excludeAllergens": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "命中任一过敏原则过滤掉该商品"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "任一标签命中即保留"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 10
+        }
+      }
+    },
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "total",
+        "items"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer",
+          "description": "符合条件的总数"
+        },
+        "returned": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "flavor": {
+                "type": "string"
+              },
+              "price": {
+                "type": "number"
+              },
+              "stock": {
+                "type": "integer"
+              },
+              "status": {
+                "type": "string"
+              },
+              "allergens": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sugarPer100g": {
+                "type": "number"
+              },
+              "suitableFor": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "notes": "只读；过敏原过滤是推荐链路的硬约束，不能被下游放宽",
+    "updatedAt": "2026-10-16T15:16:22.797Z"
+  },
+  {
+    "id": "query_activities",
+    "name": "活动查询",
+    "description": "查询营销活动的门槛、优惠规则、适用类目与有效期",
+    "kind": "查询",
+    "riskLevel": "低",
+    "enabled": true,
+    "version": "1.1.0",
+    "timeoutMs": 2000,
+    "sampleInput": {
+      "activeOnly": true,
+      "limit": 3
+    },
+    "inputSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "channel": {
+          "type": "string",
+          "enum": [
+            "小程序",
+            "APP",
+            "直播间",
+            "私域社群"
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "满减",
+            "折扣",
+            "赠品",
+            "秒杀",
+            "组合装"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "筹备中",
+            "进行中",
+            "已结束"
+          ]
+        },
+        "activeOnly": {
+          "type": "boolean",
+          "description": "只返回当前时间在有效期内的活动"
+        },
+        "at": {
+          "type": "string",
+          "description": "按指定时间判定有效期（ISO 时间）"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 10
+        }
+      }
+    },
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "total",
+        "items"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer"
+        },
+        "at": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "threshold": {
+                "type": "number"
+              },
+              "rule": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "number"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
+              },
+              "applicableCategories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "stackableWithCoupon": {
+                "type": "boolean"
+              },
+              "startAt": {
+                "type": "string"
+              },
+              "endAt": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "notes": "活动是否叠加券由 stackableWithCoupon 决定，报价前必须查",
+    "updatedAt": "2026-10-16T15:16:22.797Z"
+  },
+  {
+    "id": "query_coupons",
+    "name": "优惠券查询",
+    "description": "查询券面额、门槛、适用商品、叠加规则与可领取状态",
+    "kind": "查询",
+    "riskLevel": "低",
+    "enabled": true,
+    "version": "1.1.0",
+    "timeoutMs": 2000,
+    "sampleInput": {
+      "activeOnly": true,
+      "limit": 4
+    },
+    "inputSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "券码，精确匹配（忽略大小写）"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "满减券",
+            "折扣券",
+            "免运费券",
+            "新客券"
+          ]
+        },
+        "activeOnly": {
+          "type": "boolean",
+          "description": "仅返回可领取且未过期的券"
+        },
+        "productId": {
+          "type": "string",
+          "description": "筛出适用于该商品的券"
+        },
+        "maxThreshold": {
+          "type": "number",
+          "minimum": 0
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 10
+        }
+      }
+    },
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "total",
+        "items"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "threshold": {
+                "type": "number"
+              },
+              "discount": {
+                "type": "number"
+              },
+              "stackable": {
+                "type": "boolean"
+              },
+              "applicableProductIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "applicableCategories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "perUserLimit": {
+                "type": "integer"
+              },
+              "status": {
+                "type": "string"
+              },
+              "validTo": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "notes": "新客券必须结合 user.isNewCustomer 判断，不能直接承诺",
+    "updatedAt": "2026-10-16T15:16:22.797Z"
+  },
+  {
+    "id": "calculate_price",
+    "name": "价格试算",
+    "description": "按商品明细 + 活动 + 优惠券计算应付金额，输出每一步折扣与冲突说明",
+    "kind": "计算",
+    "riskLevel": "中",
+    "enabled": true,
+    "version": "1.0.0",
+    "timeoutMs": 1500,
+    "sampleInput": {
+      "items": [
+        {
+          "productId": "prd_001",
+          "qty": 2
+        }
+      ],
+      "couponCode": "SG199-30",
+      "activityId": "act_001"
+    },
+    "inputSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "items"
+      ],
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "required": [
+              "productId",
+              "qty"
+            ],
+            "properties": {
+              "productId": {
+                "type": "string"
+              },
+              "qty": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 99
+              }
+            }
+          }
+        },
+        "couponCode": {
+          "type": "string",
+          "description": "可选，参与试算的券码"
+        },
+        "activityId": {
+          "type": "string",
+          "description": "可选，参与试算的活动 id"
+        }
+      }
+    },
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "subtotal",
+        "payable",
+        "notes"
+      ],
+      "properties": {
+        "lines": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "subtotal": {
+          "type": "number"
+        },
+        "activityDiscount": {
+          "type": "number"
+        },
+        "couponDiscount": {
+          "type": "number"
+        },
+        "totalDiscount": {
+          "type": "number"
+        },
+        "payable": {
+          "type": "number"
+        },
+        "appliedActivity": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "appliedCoupon": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": "纯计算，不写数据；活动与券不可叠加时自动保留更优方案并在 notes 说明",
+    "updatedAt": "2026-10-16T15:16:22.797Z"
+  },
+  {
+    "id": "query_orders",
+    "name": "订单查询",
+    "description": "按订单号/用户/状态查询订单，含物流状态与售后状态两列",
+    "kind": "查询",
+    "riskLevel": "低",
+    "enabled": true,
+    "version": "1.1.0",
+    "timeoutMs": 2500,
+    "sampleInput": {
+      "status": "待发货",
+      "limit": 3
+    },
+    "inputSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "orderNo": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "待付款",
+            "待发货",
+            "已发货",
+            "已签收",
+            "退款中",
+            "已退款",
+            "已取消"
+          ]
+        },
+        "logisticsStatus": {
+          "type": "string",
+          "enum": [
+            "未发货",
+            "已揽收",
+            "运输中",
+            "派送中",
+            "已签收",
+            "异常"
+          ]
+        },
+        "afterSalesStatus": {
+          "type": "string",
+          "enum": [
+            "无",
+            "退款中",
+            "已退款",
+            "退货中",
+            "换货中",
+            "已关闭"
+          ]
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 10
+        }
+      }
+    },
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "total",
+        "items"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "orderNo": {
+                "type": "string"
+              },
+              "userId": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "logisticsStatus": {
+                "type": "string"
+              },
+              "afterSalesStatus": {
+                "type": "string"
+              },
+              "afterSalesReason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "payable": {
+                "type": "number"
+              },
+              "trackingNo": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "createdAt": {
+                "type": "string"
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "notes": "售后状态与订单状态分开判断，避免把「退款中」说成「已退款」",
+    "updatedAt": "2026-10-16T15:16:22.797Z"
+  },
+  {
+    "id": "query_logistics",
+    "name": "物流查询",
+    "description": "按订单号/运单号查询轨迹、最新节点与延误时长",
+    "kind": "查询",
+    "riskLevel": "低",
+    "enabled": true,
+    "version": "1.1.0",
+    "timeoutMs": 3000,
+    "sampleInput": {
+      "status": "异常",
+      "limit": 3
+    },
+    "inputSchema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "orderNo": {
+          "type": "string"
+        },
+        "trackingNo": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "已揽收",
+            "运输中",
+            "派送中",
+            "已签收",
+            "异常"
+          ]
+        },
+        "carrier": {
+          "type": "string",
+          "enum": [
+            "顺丰速运",
+            "中通快递",
+            "圆通速递",
+            "京东物流",
+            "邮政EMS"
+          ]
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 10
+        }
+      }
+    },
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "total",
+        "items"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "orderNo": {
+                "type": "string"
+              },
+              "carrier": {
+                "type": "string"
+              },
+              "trackingNo": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "lastEvent": {
+                "type": "string"
+              },
+              "lastEventAt": {
+                "type": "string"
+              },
+              "estimatedArrival": {
+                "type": "string"
+              },
+              "delayHours": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "notes": "delayHours ≥ 12 或 status=异常 时应触发 human-handoff-decision",
+    "updatedAt": "2026-10-16T15:16:22.797Z"
+  }
+]

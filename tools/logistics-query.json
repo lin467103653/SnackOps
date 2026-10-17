@@ -1,0 +1,29 @@
+{
+  "key": "logistics_query",
+  "name": "物流轨迹查询",
+  "type": "查询",
+  "riskLevel": "低",
+  "sideEffect": false,
+  "version": "1.1.4",
+  "endpoint": "internal://logistics-gateway/v1/track/{trackingNo}",
+  "input": {
+    "type": "object",
+    "required": ["trackingNo"],
+    "properties": {
+      "trackingNo": { "type": "string" },
+      "carrier": { "type": "string", "enum": ["顺丰速运", "中通快递", "圆通速递", "京东物流", "邮政EMS"] }
+    }
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "status": { "type": "string" },
+      "lastEvent": { "type": "string" },
+      "lastEventAt": { "type": "string", "format": "date-time" },
+      "delayHours": { "type": "number" }
+    }
+  },
+  "timeoutMs": 4000,
+  "cacheTtlSec": 60,
+  "notes": "承运商网关不稳定，超时后重试 1 次；仍失败则走兜底话术。"
+}

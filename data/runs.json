@@ -1,0 +1,1572 @@
+[
+  {
+    "id": "run_001",
+    "traceId": "trace-c87316cdacd557e66d2bde19",
+    "ticketId": null,
+    "channel": "社群",
+    "skillKey": "human-handoff-decision",
+    "status": "成功",
+    "latencyMs": 10473,
+    "tokensIn": 3045,
+    "tokensOut": 698,
+    "costYuan": 0.0232,
+    "plannerSteps": 6,
+    "retries": 0,
+    "startedAt": "2026-10-04T01:18:19.000Z",
+    "steps": [
+      {
+        "name": "识别催发货意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 2151
+      },
+      {
+        "name": "查询订单物流",
+        "tool": "logistics_query",
+        "status": "成功",
+        "ms": 2071
+      },
+      {
+        "name": "判断延误时长",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 1274
+      },
+      {
+        "name": "准备交接单",
+        "tool": "ticket_handoff",
+        "status": "成功",
+        "ms": 2078
+      },
+      {
+        "name": "生成安抚话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 2001
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_002",
+    "traceId": "trace-36f377b55ba3f60e02b214de",
+    "ticketId": null,
+    "channel": "小程序",
+    "skillKey": "complaint-triage",
+    "status": "成功",
+    "latencyMs": 7726,
+    "tokensIn": 1959,
+    "tokensOut": 531,
+    "costYuan": 0.0164,
+    "plannerSteps": 5,
+    "retries": 0,
+    "startedAt": "2026-10-04T01:40:26.000Z",
+    "steps": [
+      {
+        "name": "情绪识别",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 1496
+      },
+      {
+        "name": "命中风险规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 1619
+      },
+      {
+        "name": "准备交接工单",
+        "tool": "ticket_handoff",
+        "status": "成功",
+        "ms": 1704
+      },
+      {
+        "name": "输出合规话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 2022
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_003",
+    "traceId": "trace-00355c50846fb74fa465204e",
+    "ticketId": null,
+    "channel": "小程序",
+    "skillKey": "conversation-summary",
+    "status": "失败",
+    "latencyMs": 4628,
+    "tokensIn": 2258,
+    "tokensOut": 605,
+    "costYuan": 0.0188,
+    "plannerSteps": 4,
+    "retries": 0,
+    "startedAt": "2026-10-04T06:48:03.000Z",
+    "steps": [
+      {
+        "name": "查询会员等级",
+        "tool": "member_benefit",
+        "status": "成功",
+        "ms": 592
+      },
+      {
+        "name": "核对积分规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 1384
+      },
+      {
+        "name": "生成权益话术",
+        "tool": null,
+        "status": "失败",
+        "ms": 2101
+      }
+    ],
+    "fallbackReason": "知识库无命中，澄清轮次超限",
+    "satisfaction": 2
+  },
+  {
+    "id": "run_004",
+    "traceId": "trace-e08bae8652ab0255c56b2265",
+    "ticketId": null,
+    "channel": "APP",
+    "skillKey": "conversation-summary",
+    "status": "成功",
+    "latencyMs": 4684,
+    "tokensIn": 8406,
+    "tokensOut": 632,
+    "costYuan": 0.0408,
+    "plannerSteps": 3,
+    "retries": 0,
+    "startedAt": "2026-10-05T04:20:54.000Z",
+    "steps": [
+      {
+        "name": "查询会员等级",
+        "tool": "member_benefit",
+        "status": "成功",
+        "ms": 455
+      },
+      {
+        "name": "核对积分规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 1850
+      },
+      {
+        "name": "生成权益话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 1568
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_005",
+    "traceId": "trace-c62e7c2822edc60f536075cd",
+    "ticketId": null,
+    "channel": "APP",
+    "skillKey": "conversation-summary",
+    "status": "超时",
+    "latencyMs": 12000,
+    "tokensIn": 3414,
+    "tokensOut": 619,
+    "costYuan": 0.0231,
+    "plannerSteps": 3,
+    "retries": 0,
+    "startedAt": "2026-10-05T07:07:41.000Z",
+    "steps": [
+      {
+        "name": "查询会员等级",
+        "tool": "member_benefit",
+        "status": "失败",
+        "ms": 2135
+      },
+      {
+        "name": "核对积分规则",
+        "tool": "knowledge_search",
+        "status": "跳过",
+        "ms": 2266
+      }
+    ],
+    "fallbackReason": "模型响应超时，已发送兜底话术",
+    "satisfaction": null
+  },
+  {
+    "id": "run_006",
+    "traceId": "trace-02f3a025be8edf5ad1d58b17",
+    "ticketId": null,
+    "channel": "APP",
+    "skillKey": "after-sales-classification",
+    "status": "成功",
+    "latencyMs": 4493,
+    "tokensIn": 3506,
+    "tokensOut": 706,
+    "costYuan": 0.025,
+    "plannerSteps": 3,
+    "retries": 0,
+    "startedAt": "2026-10-05T07:40:17.000Z",
+    "steps": [
+      {
+        "name": "解析退货诉求",
+        "tool": null,
+        "status": "成功",
+        "ms": 2253
+      },
+      {
+        "name": "查询订单详情",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 1934
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_007",
+    "traceId": "trace-2f793617e0b606efc613a2e3",
+    "ticketId": null,
+    "channel": "社群",
+    "skillKey": "need-extraction",
+    "status": "成功",
+    "latencyMs": 3423,
+    "tokensIn": 1156,
+    "tokensOut": 291,
+    "costYuan": 0.0093,
+    "plannerSteps": 3,
+    "retries": 2,
+    "startedAt": "2026-10-06T04:29:07.000Z",
+    "steps": [
+      {
+        "name": "识别售前意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1646
+      },
+      {
+        "name": "查询商品库存",
+        "tool": "inventory_check",
+        "status": "成功",
+        "ms": 532
+      },
+      {
+        "name": "生成推荐话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 396
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_008",
+    "traceId": "trace-ddfef920c426e2e534f5cd18",
+    "ticketId": null,
+    "channel": "小程序",
+    "skillKey": "after-sales-classification",
+    "status": "已接管",
+    "latencyMs": 5301,
+    "tokensIn": 1713,
+    "tokensOut": 642,
+    "costYuan": 0.0176,
+    "plannerSteps": 4,
+    "retries": 0,
+    "startedAt": "2026-10-06T06:41:33.000Z",
+    "steps": [
+      {
+        "name": "解析退货诉求",
+        "tool": null,
+        "status": "成功",
+        "ms": 1248
+      },
+      {
+        "name": "查询订单详情",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 2396
+      },
+      {
+        "name": "匹配退货政策",
+        "tool": "knowledge_search",
+        "status": "跳过",
+        "ms": 1195
+      }
+    ],
+    "fallbackReason": "情绪识别为高度负面，主动接管",
+    "satisfaction": null
+  },
+  {
+    "id": "run_009",
+    "traceId": "trace-28e2a747c9f0714f52c3856d",
+    "ticketId": null,
+    "channel": "直播间",
+    "skillKey": "recommendation-reason",
+    "status": "成功",
+    "latencyMs": 5191,
+    "tokensIn": 3058,
+    "tokensOut": 191,
+    "costYuan": 0.0141,
+    "plannerSteps": 4,
+    "retries": 0,
+    "startedAt": "2026-10-07T09:41:52.000Z",
+    "steps": [
+      {
+        "name": "识别优惠意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 889
+      },
+      {
+        "name": "查询可用券",
+        "tool": "coupon_query",
+        "status": "成功",
+        "ms": 292
+      },
+      {
+        "name": "校验叠加规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 2235
+      },
+      {
+        "name": "生成回复",
+        "tool": null,
+        "status": "成功",
+        "ms": 1513
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_010",
+    "traceId": "trace-5f67b902869c5bbc0d6a15bc",
+    "ticketId": null,
+    "channel": "直播间",
+    "skillKey": "need-extraction",
+    "status": "成功",
+    "latencyMs": 3319,
+    "tokensIn": 3019,
+    "tokensOut": 692,
+    "costYuan": 0.023,
+    "plannerSteps": 3,
+    "retries": 1,
+    "startedAt": "2026-10-07T10:38:57.000Z",
+    "steps": [
+      {
+        "name": "识别售前意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1145
+      },
+      {
+        "name": "查询商品库存",
+        "tool": "inventory_check",
+        "status": "成功",
+        "ms": 552
+      },
+      {
+        "name": "生成推荐话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 1034
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_011",
+    "traceId": "trace-b4e2e4bfac9df73e1fd3f244",
+    "ticketId": null,
+    "channel": "APP",
+    "skillKey": "recommendation-reason",
+    "status": "成功",
+    "latencyMs": 7584,
+    "tokensIn": 7397,
+    "tokensOut": 1176,
+    "costYuan": 0.0471,
+    "plannerSteps": 4,
+    "retries": 2,
+    "startedAt": "2026-10-08T10:12:53.000Z",
+    "steps": [
+      {
+        "name": "识别优惠意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1109
+      },
+      {
+        "name": "查询可用券",
+        "tool": "coupon_query",
+        "status": "成功",
+        "ms": 2265
+      },
+      {
+        "name": "校验叠加规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 2015
+      },
+      {
+        "name": "生成回复",
+        "tool": null,
+        "status": "成功",
+        "ms": 1504
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_012",
+    "traceId": "trace-e743904aa55783ed9b440a80",
+    "ticketId": null,
+    "channel": "小程序",
+    "skillKey": "need-extraction",
+    "status": "失败",
+    "latencyMs": 1957,
+    "tokensIn": 3453,
+    "tokensOut": 627,
+    "costYuan": 0.0234,
+    "plannerSteps": 3,
+    "retries": 1,
+    "startedAt": "2026-10-09T02:33:40.000Z",
+    "steps": [
+      {
+        "name": "识别售前意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1012
+      },
+      {
+        "name": "查询商品库存",
+        "tool": "inventory_check",
+        "status": "失败",
+        "ms": 734
+      }
+    ],
+    "fallbackReason": "用户诉求超出 Skill 边界，无法闭环",
+    "satisfaction": 1
+  },
+  {
+    "id": "run_013",
+    "traceId": "trace-e0da452457226e6854b29ada",
+    "ticketId": null,
+    "channel": "社群",
+    "skillKey": "need-extraction",
+    "status": "成功",
+    "latencyMs": 4770,
+    "tokensIn": 1838,
+    "tokensOut": 554,
+    "costYuan": 0.0164,
+    "plannerSteps": 3,
+    "retries": 0,
+    "startedAt": "2026-10-09T11:23:22.000Z",
+    "steps": [
+      {
+        "name": "识别售前意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1854
+      },
+      {
+        "name": "查询商品库存",
+        "tool": "inventory_check",
+        "status": "成功",
+        "ms": 1621
+      },
+      {
+        "name": "生成推荐话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 1110
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_014",
+    "traceId": "trace-69aef92c33104dc403130226",
+    "ticketId": null,
+    "channel": "APP",
+    "skillKey": "complaint-triage",
+    "status": "超时",
+    "latencyMs": 12000,
+    "tokensIn": 3338,
+    "tokensOut": 601,
+    "costYuan": 0.0225,
+    "plannerSteps": 4,
+    "retries": 1,
+    "startedAt": "2026-10-10T10:35:11.000Z",
+    "steps": [
+      {
+        "name": "情绪识别",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 1932
+      },
+      {
+        "name": "命中风险规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 362
+      },
+      {
+        "name": "准备交接工单",
+        "tool": "ticket_handoff",
+        "status": "失败",
+        "ms": 1213
+      },
+      {
+        "name": "输出合规话术",
+        "tool": null,
+        "status": "跳过",
+        "ms": 225
+      }
+    ],
+    "fallbackReason": "模型响应超时，已发送兜底话术",
+    "satisfaction": null
+  },
+  {
+    "id": "run_015",
+    "traceId": "trace-23eabaf569edd0b41d836c99",
+    "ticketId": null,
+    "channel": "社群",
+    "skillKey": "clarification-question",
+    "status": "成功",
+    "latencyMs": 5564,
+    "tokensIn": 1906,
+    "tokensOut": 433,
+    "costYuan": 0.0145,
+    "plannerSteps": 3,
+    "retries": 1,
+    "startedAt": "2026-10-11T01:29:02.000Z",
+    "steps": [
+      {
+        "name": "校验订单状态",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 1025
+      },
+      {
+        "name": "修改收货地址",
+        "tool": "address_update",
+        "status": "成功",
+        "ms": 2287
+      },
+      {
+        "name": "回复确认",
+        "tool": null,
+        "status": "成功",
+        "ms": 1485
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_016",
+    "traceId": "trace-c63a63fcb72da8cffdace28e",
+    "ticketId": null,
+    "channel": "直播间",
+    "skillKey": "human-handoff-decision",
+    "status": "成功",
+    "latencyMs": 3728,
+    "tokensIn": 2987,
+    "tokensOut": 619,
+    "costYuan": 0.0216,
+    "plannerSteps": 3,
+    "retries": 0,
+    "startedAt": "2026-10-11T05:20:12.000Z",
+    "steps": [
+      {
+        "name": "识别催发货意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1684
+      },
+      {
+        "name": "查询订单物流",
+        "tool": "logistics_query",
+        "status": "成功",
+        "ms": 532
+      },
+      {
+        "name": "判断延误时长",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 818
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_017",
+    "traceId": "trace-8645fb436993030f4160e48d",
+    "ticketId": null,
+    "channel": "电话",
+    "skillKey": "recommendation-decision",
+    "status": "成功",
+    "latencyMs": 3016,
+    "tokensIn": 2920,
+    "tokensOut": 543,
+    "costYuan": 0.02,
+    "plannerSteps": 3,
+    "retries": 2,
+    "startedAt": "2026-10-12T08:36:47.000Z",
+    "steps": [
+      {
+        "name": "识别商品意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1586
+      },
+      {
+        "name": "检索商品库",
+        "tool": "inventory_check",
+        "status": "成功",
+        "ms": 772
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_018",
+    "traceId": "trace-e6e56bcc063a92497c255ea5",
+    "ticketId": null,
+    "channel": "电话",
+    "skillKey": "conversation-summary",
+    "status": "超时",
+    "latencyMs": 12000,
+    "tokensIn": 8507,
+    "tokensOut": 560,
+    "costYuan": 0.0399,
+    "plannerSteps": 4,
+    "retries": 2,
+    "startedAt": "2026-10-13T02:56:19.000Z",
+    "steps": [
+      {
+        "name": "查询会员等级",
+        "tool": "member_benefit",
+        "status": "成功",
+        "ms": 988
+      },
+      {
+        "name": "核对积分规则",
+        "tool": "knowledge_search",
+        "status": "失败",
+        "ms": 1207
+      },
+      {
+        "name": "生成权益话术",
+        "tool": null,
+        "status": "跳过",
+        "ms": 600
+      }
+    ],
+    "fallbackReason": "链路总耗时超过 15s，转人工处理",
+    "satisfaction": 2
+  },
+  {
+    "id": "run_019",
+    "traceId": "trace-1169578b5b60ed3a1bcaa112",
+    "ticketId": null,
+    "channel": "小程序",
+    "skillKey": "complaint-triage",
+    "status": "已接管",
+    "latencyMs": 4941,
+    "tokensIn": 1498,
+    "tokensOut": 192,
+    "costYuan": 0.0087,
+    "plannerSteps": 4,
+    "retries": 1,
+    "startedAt": "2026-10-13T07:25:34.000Z",
+    "steps": [
+      {
+        "name": "情绪识别",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 311
+      },
+      {
+        "name": "命中风险规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 2147
+      },
+      {
+        "name": "准备交接工单",
+        "tool": "ticket_handoff",
+        "status": "跳过",
+        "ms": 2089
+      }
+    ],
+    "fallbackReason": "黑卡用户要求人工客服",
+    "satisfaction": 2
+  },
+  {
+    "id": "run_020",
+    "traceId": "trace-9845f6b9a610d3e15751d315",
+    "ticketId": null,
+    "channel": "APP",
+    "skillKey": "recommendation-reason",
+    "status": "失败",
+    "latencyMs": 3357,
+    "tokensIn": 3572,
+    "tokensOut": 212,
+    "costYuan": 0.0163,
+    "plannerSteps": 2,
+    "retries": 2,
+    "startedAt": "2026-10-14T09:53:28.000Z",
+    "steps": [
+      {
+        "name": "识别优惠意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 561
+      },
+      {
+        "name": "查询可用券",
+        "tool": "coupon_query",
+        "status": "失败",
+        "ms": 2056
+      }
+    ],
+    "fallbackReason": "用户诉求超出 Skill 边界，无法闭环",
+    "satisfaction": 2
+  },
+  {
+    "id": "run_021",
+    "traceId": "trace-41602edc4cb1dae12e1dce85",
+    "ticketId": "tkt_001",
+    "channel": "小程序",
+    "skillKey": "human-handoff-decision",
+    "status": "成功",
+    "latencyMs": 8462,
+    "tokensIn": 2538,
+    "tokensOut": 1213,
+    "costYuan": 0.0307,
+    "plannerSteps": 6,
+    "retries": 1,
+    "startedAt": "2026-10-14T20:41:14.089Z",
+    "steps": [
+      {
+        "name": "识别催发货意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 2264
+      },
+      {
+        "name": "查询订单物流",
+        "tool": "logistics_query",
+        "status": "成功",
+        "ms": 2053
+      },
+      {
+        "name": "判断延误时长",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 1696
+      },
+      {
+        "name": "准备交接单",
+        "tool": "ticket_handoff",
+        "status": "成功",
+        "ms": 764
+      },
+      {
+        "name": "生成安抚话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 980
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 3
+  },
+  {
+    "id": "run_022",
+    "traceId": "trace-7b2304ab14dee1e8b6e0ab13",
+    "ticketId": "tkt_002",
+    "channel": "小程序",
+    "skillKey": "after-sales-classification",
+    "status": "成功",
+    "latencyMs": 5226,
+    "tokensIn": 3154,
+    "tokensOut": 649,
+    "costYuan": 0.0227,
+    "plannerSteps": 5,
+    "retries": 0,
+    "startedAt": "2026-10-14T21:14:14.089Z",
+    "steps": [
+      {
+        "name": "解析退货诉求",
+        "tool": null,
+        "status": "成功",
+        "ms": 1737
+      },
+      {
+        "name": "查询订单详情",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 2370
+      },
+      {
+        "name": "匹配退货政策",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 515
+      },
+      {
+        "name": "创建退款单",
+        "tool": "refund_create",
+        "status": "成功",
+        "ms": 202
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_023",
+    "traceId": "trace-756697c159c5969dd5d2a007",
+    "ticketId": "tkt_003",
+    "channel": "APP",
+    "skillKey": "complaint-triage",
+    "status": "失败",
+    "latencyMs": 6223,
+    "tokensIn": 2223,
+    "tokensOut": 538,
+    "costYuan": 0.0175,
+    "plannerSteps": 5,
+    "retries": 0,
+    "startedAt": "2026-10-14T23:44:14.089Z",
+    "steps": [
+      {
+        "name": "情绪识别",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 577
+      },
+      {
+        "name": "命中风险规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 973
+      },
+      {
+        "name": "准备交接工单",
+        "tool": "ticket_handoff",
+        "status": "成功",
+        "ms": 1863
+      },
+      {
+        "name": "输出合规话术",
+        "tool": null,
+        "status": "失败",
+        "ms": 2057
+      }
+    ],
+    "fallbackReason": "知识库无命中，澄清轮次超限",
+    "satisfaction": null
+  },
+  {
+    "id": "run_024",
+    "traceId": "trace-21903d301c651ed75b2486d0",
+    "ticketId": "tkt_004",
+    "channel": "小程序",
+    "skillKey": "recommendation-reason",
+    "status": "成功",
+    "latencyMs": 9322,
+    "tokensIn": 2294,
+    "tokensOut": 182,
+    "costYuan": 0.0113,
+    "plannerSteps": 4,
+    "retries": 1,
+    "startedAt": "2026-10-15T04:18:14.089Z",
+    "steps": [
+      {
+        "name": "识别优惠意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 2176
+      },
+      {
+        "name": "查询可用券",
+        "tool": "coupon_query",
+        "status": "成功",
+        "ms": 2327
+      },
+      {
+        "name": "校验叠加规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 2219
+      },
+      {
+        "name": "生成回复",
+        "tool": null,
+        "status": "成功",
+        "ms": 2354
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_025",
+    "traceId": "trace-995f668a45d73f60405d28ea",
+    "ticketId": "tkt_005",
+    "channel": "直播间",
+    "skillKey": "human-handoff-decision",
+    "status": "成功",
+    "latencyMs": 8415,
+    "tokensIn": 11176,
+    "tokensOut": 401,
+    "costYuan": 0.0463,
+    "plannerSteps": 6,
+    "retries": 2,
+    "startedAt": "2026-10-15T08:08:14.089Z",
+    "steps": [
+      {
+        "name": "识别催发货意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1894
+      },
+      {
+        "name": "查询订单物流",
+        "tool": "logistics_query",
+        "status": "成功",
+        "ms": 578
+      },
+      {
+        "name": "判断延误时长",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 2223
+      },
+      {
+        "name": "准备交接单",
+        "tool": "ticket_handoff",
+        "status": "成功",
+        "ms": 1126
+      },
+      {
+        "name": "生成安抚话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 2047
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_026",
+    "traceId": "trace-b94c8ef680f26000f7bc113e",
+    "ticketId": "tkt_006",
+    "channel": "小程序",
+    "skillKey": "clarification-question",
+    "status": "成功",
+    "latencyMs": 3024,
+    "tokensIn": 1682,
+    "tokensOut": 799,
+    "costYuan": 0.0203,
+    "plannerSteps": 4,
+    "retries": 2,
+    "startedAt": "2026-10-15T11:02:14.089Z",
+    "steps": [
+      {
+        "name": "校验订单状态",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 699
+      },
+      {
+        "name": "修改收货地址",
+        "tool": "address_update",
+        "status": "成功",
+        "ms": 161
+      },
+      {
+        "name": "回复确认",
+        "tool": null,
+        "status": "成功",
+        "ms": 1798
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_027",
+    "traceId": "trace-b1848fbc7b7707382a473b62",
+    "ticketId": "tkt_007",
+    "channel": "APP",
+    "skillKey": "after-sales-classification",
+    "status": "已接管",
+    "latencyMs": 7270,
+    "tokensIn": 1496,
+    "tokensOut": 626,
+    "costYuan": 0.0165,
+    "plannerSteps": 5,
+    "retries": 1,
+    "startedAt": "2026-10-15T12:53:14.089Z",
+    "steps": [
+      {
+        "name": "解析退货诉求",
+        "tool": null,
+        "status": "成功",
+        "ms": 948
+      },
+      {
+        "name": "查询订单详情",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 1640
+      },
+      {
+        "name": "匹配退货政策",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 2119
+      },
+      {
+        "name": "创建退款单",
+        "tool": "refund_create",
+        "status": "跳过",
+        "ms": 2026
+      }
+    ],
+    "fallbackReason": "黑卡用户要求人工客服",
+    "satisfaction": 1
+  },
+  {
+    "id": "run_028",
+    "traceId": "trace-70ae2386d8b280b4e00f6c25",
+    "ticketId": "tkt_008",
+    "channel": "社群",
+    "skillKey": "recommendation-decision",
+    "status": "成功",
+    "latencyMs": 2347,
+    "tokensIn": 1951,
+    "tokensOut": 246,
+    "costYuan": 0.0113,
+    "plannerSteps": 3,
+    "retries": 2,
+    "startedAt": "2026-10-15T19:56:14.089Z",
+    "steps": [
+      {
+        "name": "识别商品意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 296
+      },
+      {
+        "name": "检索商品库",
+        "tool": "inventory_check",
+        "status": "成功",
+        "ms": 1175
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_029",
+    "traceId": "trace-37dff2196d2c1ead9dbf2257",
+    "ticketId": "tkt_009",
+    "channel": "小程序",
+    "skillKey": "human-handoff-decision",
+    "status": "成功",
+    "latencyMs": 3895,
+    "tokensIn": 3036,
+    "tokensOut": 242,
+    "costYuan": 0.015,
+    "plannerSteps": 3,
+    "retries": 2,
+    "startedAt": "2026-10-15T20:41:14.089Z",
+    "steps": [
+      {
+        "name": "识别催发货意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1081
+      },
+      {
+        "name": "查询订单物流",
+        "tool": "logistics_query",
+        "status": "成功",
+        "ms": 1802
+      },
+      {
+        "name": "判断延误时长",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 159
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_030",
+    "traceId": "trace-c4ce2c41aaf68b6365640ce3",
+    "ticketId": "tkt_010",
+    "channel": "电话",
+    "skillKey": "human-handoff-decision",
+    "status": "超时",
+    "latencyMs": 12000,
+    "tokensIn": 2680,
+    "tokensOut": 319,
+    "costYuan": 0.0151,
+    "plannerSteps": 3,
+    "retries": 0,
+    "startedAt": "2026-10-16T02:59:14.089Z",
+    "steps": [
+      {
+        "name": "识别催发货意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1535
+      },
+      {
+        "name": "查询订单物流",
+        "tool": "logistics_query",
+        "status": "失败",
+        "ms": 2312
+      },
+      {
+        "name": "判断延误时长",
+        "tool": "sentiment_scan",
+        "status": "跳过",
+        "ms": 909
+      }
+    ],
+    "fallbackReason": "链路总耗时超过 15s，转人工处理",
+    "satisfaction": 1
+  },
+  {
+    "id": "run_031",
+    "traceId": "trace-d7a201ad4ac4ca0e722a4e1f",
+    "ticketId": "tkt_011",
+    "channel": "小程序",
+    "skillKey": "after-sales-classification",
+    "status": "成功",
+    "latencyMs": 3296,
+    "tokensIn": 2030,
+    "tokensOut": 1374,
+    "costYuan": 0.0318,
+    "plannerSteps": 4,
+    "retries": 2,
+    "startedAt": "2026-10-16T05:41:14.089Z",
+    "steps": [
+      {
+        "name": "解析退货诉求",
+        "tool": null,
+        "status": "成功",
+        "ms": 432
+      },
+      {
+        "name": "查询订单详情",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 1082
+      },
+      {
+        "name": "匹配退货政策",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 1143
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_032",
+    "traceId": "trace-01d10df7b02794cf2e26e2e8",
+    "ticketId": "tkt_012",
+    "channel": "直播间",
+    "skillKey": "recommendation-decision",
+    "status": "成功",
+    "latencyMs": 5986,
+    "tokensIn": 11587,
+    "tokensOut": 374,
+    "costYuan": 0.0473,
+    "plannerSteps": 5,
+    "retries": 1,
+    "startedAt": "2026-10-16T10:43:14.089Z",
+    "steps": [
+      {
+        "name": "识别商品意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 2040
+      },
+      {
+        "name": "检索商品库",
+        "tool": "inventory_check",
+        "status": "成功",
+        "ms": 1609
+      },
+      {
+        "name": "召回知识条目",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 1445
+      },
+      {
+        "name": "生成推荐话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 450
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_033",
+    "traceId": "trace-83552bc996cafd481d1d7188",
+    "ticketId": "tkt_013",
+    "channel": "APP",
+    "skillKey": "complaint-triage",
+    "status": "已接管",
+    "latencyMs": 6885,
+    "tokensIn": 1486,
+    "tokensOut": 688,
+    "costYuan": 0.0176,
+    "plannerSteps": 4,
+    "retries": 0,
+    "startedAt": "2026-10-16T14:25:14.089Z",
+    "steps": [
+      {
+        "name": "情绪识别",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 951
+      },
+      {
+        "name": "命中风险规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 1887
+      },
+      {
+        "name": "准备交接工单",
+        "tool": "ticket_handoff",
+        "status": "成功",
+        "ms": 2345
+      },
+      {
+        "name": "输出合规话术",
+        "tool": null,
+        "status": "跳过",
+        "ms": 808
+      }
+    ],
+    "fallbackReason": "退款金额超过阈值，已转人工",
+    "satisfaction": null
+  },
+  {
+    "id": "run_034",
+    "traceId": "trace-d065dc9070351e9bca3ff75f",
+    "ticketId": "tkt_014",
+    "channel": "小程序",
+    "skillKey": "recommendation-reason",
+    "status": "成功",
+    "latencyMs": 4984,
+    "tokensIn": 1218,
+    "tokensOut": 188,
+    "costYuan": 0.0076,
+    "plannerSteps": 5,
+    "retries": 1,
+    "startedAt": "2026-10-16T19:32:14.089Z",
+    "steps": [
+      {
+        "name": "识别优惠意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 1133
+      },
+      {
+        "name": "查询可用券",
+        "tool": "coupon_query",
+        "status": "成功",
+        "ms": 555
+      },
+      {
+        "name": "校验叠加规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 883
+      },
+      {
+        "name": "生成回复",
+        "tool": null,
+        "status": "成功",
+        "ms": 1692
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_035",
+    "traceId": "trace-23a450d5693adf71d1cb9b7a",
+    "ticketId": "tkt_015",
+    "channel": "小程序",
+    "skillKey": "human-handoff-decision",
+    "status": "成功",
+    "latencyMs": 4355,
+    "tokensIn": 3457,
+    "tokensOut": 335,
+    "costYuan": 0.0181,
+    "plannerSteps": 5,
+    "retries": 0,
+    "startedAt": "2026-10-16T23:53:14.089Z",
+    "steps": [
+      {
+        "name": "识别催发货意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 319
+      },
+      {
+        "name": "查询订单物流",
+        "tool": "logistics_query",
+        "status": "成功",
+        "ms": 959
+      },
+      {
+        "name": "判断延误时长",
+        "tool": "sentiment_scan",
+        "status": "成功",
+        "ms": 1991
+      },
+      {
+        "name": "准备交接单",
+        "tool": "ticket_handoff",
+        "status": "成功",
+        "ms": 583
+      },
+      {
+        "name": "生成安抚话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 290
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_036",
+    "traceId": "trace-6bbf7a5719ee83055a3bdeb0",
+    "ticketId": "tkt_016",
+    "channel": "APP",
+    "skillKey": "clarification-question",
+    "status": "成功",
+    "latencyMs": 5095,
+    "tokensIn": 3072,
+    "tokensOut": 1171,
+    "costYuan": 0.0318,
+    "plannerSteps": 4,
+    "retries": 1,
+    "startedAt": "2026-10-17T04:02:14.089Z",
+    "steps": [
+      {
+        "name": "校验订单状态",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 1036
+      },
+      {
+        "name": "修改收货地址",
+        "tool": "address_update",
+        "status": "成功",
+        "ms": 2342
+      },
+      {
+        "name": "回复确认",
+        "tool": null,
+        "status": "成功",
+        "ms": 1305
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_037",
+    "traceId": "trace-8c1c2b8bb86f469580739e30",
+    "ticketId": "tkt_017",
+    "channel": "小程序",
+    "skillKey": "after-sales-classification",
+    "status": "成功",
+    "latencyMs": 5892,
+    "tokensIn": 3208,
+    "tokensOut": 197,
+    "costYuan": 0.0148,
+    "plannerSteps": 6,
+    "retries": 1,
+    "startedAt": "2026-10-17T07:16:14.089Z",
+    "steps": [
+      {
+        "name": "解析退货诉求",
+        "tool": null,
+        "status": "成功",
+        "ms": 574
+      },
+      {
+        "name": "查询订单详情",
+        "tool": "order_lookup",
+        "status": "成功",
+        "ms": 205
+      },
+      {
+        "name": "匹配退货政策",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 2134
+      },
+      {
+        "name": "创建退款单",
+        "tool": "refund_create",
+        "status": "成功",
+        "ms": 1740
+      },
+      {
+        "name": "生成回复",
+        "tool": null,
+        "status": "成功",
+        "ms": 832
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_038",
+    "traceId": "trace-ef9fd8a38a32a4cb9adeacba",
+    "ticketId": "tkt_018",
+    "channel": "直播间",
+    "skillKey": "human-handoff-decision",
+    "status": "成功",
+    "latencyMs": 2376,
+    "tokensIn": 1874,
+    "tokensOut": 269,
+    "costYuan": 0.0114,
+    "plannerSteps": 2,
+    "retries": 0,
+    "startedAt": "2026-10-17T08:25:14.089Z",
+    "steps": [
+      {
+        "name": "识别催发货意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 655
+      },
+      {
+        "name": "查询订单物流",
+        "tool": "logistics_query",
+        "status": "成功",
+        "ms": 1440
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 4
+  },
+  {
+    "id": "run_039",
+    "traceId": "trace-b210d2149087a910c272c52a",
+    "ticketId": "tkt_020",
+    "channel": "小程序",
+    "skillKey": "recommendation-reason",
+    "status": "成功",
+    "latencyMs": 3601,
+    "tokensIn": 7726,
+    "tokensOut": 663,
+    "costYuan": 0.039,
+    "plannerSteps": 3,
+    "retries": 1,
+    "startedAt": "2026-10-17T12:38:14.089Z",
+    "steps": [
+      {
+        "name": "识别优惠意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 708
+      },
+      {
+        "name": "查询可用券",
+        "tool": "coupon_query",
+        "status": "成功",
+        "ms": 820
+      },
+      {
+        "name": "校验叠加规则",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 1530
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  },
+  {
+    "id": "run_040",
+    "traceId": "trace-30780c581bdfc6bd96d18397",
+    "ticketId": "tkt_019",
+    "channel": "社群",
+    "skillKey": "recommendation-decision",
+    "status": "成功",
+    "latencyMs": 3658,
+    "tokensIn": 1719,
+    "tokensOut": 219,
+    "costYuan": 0.01,
+    "plannerSteps": 5,
+    "retries": 1,
+    "startedAt": "2026-10-17T13:14:14.089Z",
+    "steps": [
+      {
+        "name": "识别商品意图",
+        "tool": null,
+        "status": "成功",
+        "ms": 431
+      },
+      {
+        "name": "检索商品库",
+        "tool": "inventory_check",
+        "status": "成功",
+        "ms": 929
+      },
+      {
+        "name": "召回知识条目",
+        "tool": "knowledge_search",
+        "status": "成功",
+        "ms": 1189
+      },
+      {
+        "name": "生成推荐话术",
+        "tool": null,
+        "status": "成功",
+        "ms": 759
+      }
+    ],
+    "fallbackReason": null,
+    "satisfaction": 5
+  }
+]

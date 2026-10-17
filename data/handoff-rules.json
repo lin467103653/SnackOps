@@ -1,0 +1,120 @@
+[
+  {
+    "id": "hr_001",
+    "name": "用户明确要求人工",
+    "trigger": "用户说「转人工」「找客服」「不要机器人」等明确诉求",
+    "condition": "命中关键词且当前会话没有已接管的人工客服",
+    "priority": "高",
+    "action": "转人工",
+    "slaMinutes": 10,
+    "channels": [
+      "小程序",
+      "APP",
+      "直播间",
+      "电话",
+      "社群"
+    ],
+    "enabled": true,
+    "note": "不得二次挽留，直接交接并给出一句安抚"
+  },
+  {
+    "id": "hr_002",
+    "name": "投诉与情绪激烈",
+    "trigger": "出现「投诉」「12315」「曝光」「律师」或辱骂、连续质问",
+    "condition": "情绪扫描为强负面，或出现监管/曝光类关键词",
+    "priority": "紧急",
+    "action": "升级主管",
+    "slaMinutes": 5,
+    "channels": [
+      "小程序",
+      "APP",
+      "电话",
+      "社群"
+    ],
+    "enabled": true,
+    "note": "先共情再升级，禁止与用户争辩，禁止引用内部规则编号"
+  },
+  {
+    "id": "hr_003",
+    "name": "食品安全风险",
+    "trigger": "异物、霉变、异味、食用后不适、过敏反应",
+    "condition": "涉及身体健康或食品安全法相关情形",
+    "priority": "紧急",
+    "action": "升级主管",
+    "slaMinutes": 5,
+    "channels": [
+      "小程序",
+      "APP",
+      "直播间",
+      "电话",
+      "社群"
+    ],
+    "enabled": true,
+    "note": "不做任何自主赔付承诺，保留聊天记录与批次号"
+  },
+  {
+    "id": "hr_004",
+    "name": "退款金额超阈值",
+    "trigger": "单笔退款或赔付金额超过 200 元",
+    "condition": "refund_create 计算金额 > 200 元",
+    "priority": "高",
+    "action": "转人工",
+    "slaMinutes": 15,
+    "channels": [
+      "小程序",
+      "APP"
+    ],
+    "enabled": true,
+    "note": "200 元以内可由 Agent 自主发起，超过必须人工二次确认"
+  },
+  {
+    "id": "hr_005",
+    "name": "连续两轮未解决",
+    "trigger": "同一诉求在 2 轮内没有给出可执行方案",
+    "condition": "意图未变更且槽位仍缺失，或用户重复同一问题",
+    "priority": "中",
+    "action": "转人工",
+    "slaMinutes": 20,
+    "channels": [
+      "小程序",
+      "APP",
+      "社群"
+    ],
+    "enabled": true,
+    "note": "转人工时附上 conversation-summary 的结构化摘要"
+  },
+  {
+    "id": "hr_006",
+    "name": "疑似中奖/返现诈骗",
+    "trigger": "用户收到「中奖」「返现」「退款到账」「扫码领取」等外部通知",
+    "condition": "用户询问是否需要转账、提供验证码或银行卡",
+    "priority": "紧急",
+    "action": "禁止承诺",
+    "slaMinutes": 5,
+    "channels": [
+      "小程序",
+      "APP",
+      "电话",
+      "社群"
+    ],
+    "enabled": true,
+    "note": "必须提示：不要转账、不要提供验证码/银行卡/身份证、不承诺兑奖、只通过官方渠道核验"
+  },
+  {
+    "id": "hr_007",
+    "name": "特殊人群健康相关",
+    "trigger": "涉及孕妇、哺乳期、婴幼儿、老人、糖尿病等特殊人群的食用咨询",
+    "condition": "用户提及健康状况或代他人（儿童/孕妇）购买",
+    "priority": "高",
+    "action": "转人工",
+    "slaMinutes": 15,
+    "channels": [
+      "小程序",
+      "APP",
+      "直播间",
+      "社群"
+    ],
+    "enabled": true,
+    "note": "回复必须附「咨询医生/成人陪同」类安全提示，不得给医疗建议"
+  }
+]

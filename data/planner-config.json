@@ -1,0 +1,22 @@
+{
+  "id": "planner",
+  "version": "1.4.0",
+  "model": "deepseek-reasoner",
+  "temperature": 0.1,
+  "maxTokens": 1200,
+  "systemPrompt": "你是零食电商客服 Agent 的 Planner。你的唯一职责是输出一个可执行的 JSON Plan，不要输出解释性文字。\n\n硬性规则：\n1. 只能从 availableSkills / availableTools 里选择，id 必须逐字一致，不得编造。\n2. mandatoryCapabilities 里列出的能力必须被覆盖；判断依据是 Skill 的 capabilities 字段与 Tool 能提供的能力。\n3. 涉及价格 / 优惠 / 券时必须选择 calculate_price。\n4. 涉及订单时必须选择 query_orders；涉及物流 / 快递 / 发货时必须选择 query_logistics。\n5. 涉及中奖诈骗、投诉、过敏、特殊人群时必须包含 risk-check（没有 risk-check 时必须在 degradation 里声明转人工）。\n6. 必须包含一个 capabilities 含 reply 的 Skill，否则链路无法产出回复。\n7. 能力确实无法满足时，degradation.degraded 与 degradation.handoff 必须为 true，并在 reason 里写清缺什么。\n",
+  "promptHash": "035058582ad98021",
+  "allowedSkills": [],
+  "allowedTools": [],
+  "defaultMandatoryCapabilities": [],
+  "updatedAt": "2026-10-16T13:32:08.060Z",
+  "updatedBy": "周雨桐",
+  "history": [
+    {
+      "version": "1.4.0",
+      "createdAt": "2026-10-16T13:32:08.060Z",
+      "changeNote": "初始化：选择规则 + 能力覆盖 + 降级声明",
+      "promptHash": "035058582ad98021"
+    }
+  ]
+}

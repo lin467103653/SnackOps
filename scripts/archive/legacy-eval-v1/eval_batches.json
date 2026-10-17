@@ -1,0 +1,146 @@
+[
+  {
+    "id": "eb_001",
+    "name": "退款政策回归（送审）",
+    "skillKey": "after-sales-classification",
+    "skillVersion": "1.3.0",
+    "caseCount": 18,
+    "passCount": 16,
+    "avgScore": 88.5,
+    "status": "已完成",
+    "trigger": "手动",
+    "startedAt": "2026-10-16T08:07:14.089Z",
+    "finishedAt": "2026-10-16T08:10:20.089Z",
+    "durationSec": 186,
+    "failedCaseIds": [
+      "ec_003",
+      "ec_004"
+    ]
+  },
+  {
+    "id": "eb_002",
+    "name": "物流跟进日检",
+    "skillKey": "human-handoff-decision",
+    "skillVersion": "1.4.0",
+    "caseCount": 20,
+    "passCount": 18,
+    "avgScore": 91.2,
+    "status": "已完成",
+    "trigger": "定时",
+    "startedAt": "2026-10-17T00:07:14.089Z",
+    "finishedAt": "2026-10-17T00:10:38.089Z",
+    "durationSec": 204,
+    "failedCaseIds": [
+      "ec_007",
+      "ec_008"
+    ]
+  },
+  {
+    "id": "eb_003",
+    "name": "优惠咨询上线前评测",
+    "skillKey": "recommendation-reason",
+    "skillVersion": "1.1.0",
+    "caseCount": 16,
+    "passCount": 13,
+    "avgScore": 82.4,
+    "status": "已完成",
+    "trigger": "上线前",
+    "startedAt": "2026-10-15T10:07:14.089Z",
+    "finishedAt": "2026-10-15T10:09:42.089Z",
+    "durationSec": 148,
+    "failedCaseIds": [
+      "ec_009",
+      "ec_010",
+      "ec_011"
+    ]
+  },
+  {
+    "id": "eb_004",
+    "name": "商品推荐口径复核",
+    "skillKey": "recommendation-decision",
+    "skillVersion": "1.2.1",
+    "caseCount": 20,
+    "passCount": 18,
+    "avgScore": 90.1,
+    "status": "已完成",
+    "trigger": "手动",
+    "startedAt": "2026-10-14T12:07:14.089Z",
+    "finishedAt": "2026-10-14T12:11:06.089Z",
+    "durationSec": 232,
+    "failedCaseIds": [
+      "ec_012",
+      "ec_014"
+    ]
+  },
+  {
+    "id": "eb_005",
+    "name": "风控话术合规评测",
+    "skillKey": "complaint-triage",
+    "skillVersion": "1.2.0",
+    "caseCount": 14,
+    "passCount": 12,
+    "avgScore": 86.7,
+    "status": "已完成",
+    "trigger": "定时",
+    "startedAt": "2026-10-13T14:07:14.089Z",
+    "finishedAt": "2026-10-13T14:09:52.089Z",
+    "durationSec": 158,
+    "failedCaseIds": [
+      "ec_017",
+      "ec_018"
+    ]
+  },
+  {
+    "id": "eb_006",
+    "name": "退款政策候选版本全量",
+    "skillKey": "after-sales-classification",
+    "skillVersion": "1.3.0",
+    "caseCount": 18,
+    "passCount": 7,
+    "avgScore": 84.2,
+    "status": "运行中",
+    "trigger": "上线前",
+    "startedAt": "2026-10-17T12:07:14.089Z",
+    "finishedAt": null,
+    "durationSec": 126,
+    "failedCaseIds": []
+  },
+  {
+    "id": "eb_007",
+    "name": "会员权益批次（接口异常）",
+    "skillKey": "conversation-summary",
+    "skillVersion": "1.0.1",
+    "caseCount": 12,
+    "passCount": 4,
+    "avgScore": 68.4,
+    "status": "失败",
+    "trigger": "定时",
+    "startedAt": "2026-10-12T14:07:14.089Z",
+    "finishedAt": "2026-10-12T14:08:12.089Z",
+    "durationSec": 58,
+    "failedCaseIds": [
+      "ec_020",
+      "ec_010",
+      "ec_002"
+    ]
+  },
+  {
+    "id": "eb_008",
+    "name": "售前团购场景首测",
+    "skillKey": "need-extraction",
+    "skillVersion": "1.4.0",
+    "caseCount": 12,
+    "passCount": 9,
+    "avgScore": 74.5,
+    "status": "已完成",
+    "trigger": "手动",
+    "startedAt": "2026-10-10T14:07:14.089Z",
+    "finishedAt": "2026-10-10T14:08:50.089Z",
+    "durationSec": 96,
+    "failedCaseIds": [
+      "ec_019",
+      "ec_014",
+      "ec_012"
+    ]
+  }
+]

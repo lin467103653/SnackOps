@@ -1,0 +1,13 @@
+{
+  "defaultPolicy": "转人工",
+  "maxRetries": 2,
+  "retryBackoffMs": 800,
+  "humanHandoffSlaMinutes": 15,
+  "degradedMode": false,
+  "notices": [
+    "双11 预热期（10:00-24:00）转人工队列较长，超时请优先发送兜底话术并标注「大促延迟」",
+    "member_benefit 工具处于维护中，会员积分问题一律按「以会员中心为准」口径回复",
+    "退款金额超过 500 元的会话必须转人工，不得自动创建退款单"
+  ],
+  "updatedAt": "2026-10-17T02:07:14.089Z"
+}

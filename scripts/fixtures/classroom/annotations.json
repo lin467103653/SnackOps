@@ -1,0 +1,146 @@
+[
+  {
+    "id": "ann_001",
+    "targetType": "run",
+    "targetId": "run_003",
+    "tag": "坏案例",
+    "note": "退款金额 899 元仍直接调用 refund_create，未按 500 元阈值转人工，需在 Skill 侧加硬校验",
+    "author": "周敏",
+    "createdAt": "2026-10-04T12:21:03.000Z"
+  },
+  {
+    "id": "ann_002",
+    "targetType": "run",
+    "targetId": "run_001",
+    "tag": "好案例",
+    "note": "先核对签收时间再解释 7 天无理由，运费归属说得清楚，可直接作为标准回复样例",
+    "author": "李佳",
+    "createdAt": "2026-10-04T03:18:19.000Z"
+  },
+  {
+    "id": "ann_003",
+    "targetType": "run",
+    "targetId": "run_008",
+    "tag": "待优化",
+    "note": "转人工前没有收集批次号与照片，人工坐席重复问询，建议前置信息收集",
+    "author": "王思远",
+    "createdAt": "2026-10-06T12:22:33.000Z"
+  },
+  {
+    "id": "ann_004",
+    "targetType": "run",
+    "targetId": "run_005",
+    "tag": "坏案例",
+    "note": "物流接口超时后台没有发出任何兜底提示，用户等待 15 秒后离开会话",
+    "author": "陈嘉禾",
+    "createdAt": "2026-10-05T12:12:41.000Z"
+  },
+  {
+    "id": "ann_005",
+    "targetType": "run",
+    "targetId": "run_002",
+    "tag": "好案例",
+    "note": "过敏原回答准确并主动提示生产线可能接触花生，合规表述到位",
+    "author": "周敏",
+    "createdAt": "2026-10-04T04:28:26.000Z"
+  },
+  {
+    "id": "ann_006",
+    "targetType": "run",
+    "targetId": "run_019",
+    "tag": "合规风险",
+    "note": "投诉场景中出现了「十倍赔偿」字样，属于超权限承诺，必须整改",
+    "author": "周敏",
+    "createdAt": "2026-10-13T11:50:34.000Z"
+  },
+  {
+    "id": "ann_007",
+    "targetType": "skill_version",
+    "targetId": "sv_after-sales-classification_1.3.0",
+    "tag": "待优化",
+    "note": "候选版本把赔付条款写进了系统提示，但未同步退货政策 v3.0 的例外项",
+    "author": "王思远",
+    "createdAt": "2026-10-14T05:15:14.089Z"
+  },
+  {
+    "id": "ann_008",
+    "targetType": "skill_version",
+    "targetId": "sv_complaint-triage_1.2.0",
+    "tag": "合规风险",
+    "note": "二级预警规则尚未经过合规评审，禁止进入灰度",
+    "author": "周敏",
+    "createdAt": "2026-10-13T16:02:14.089Z"
+  },
+  {
+    "id": "ann_009",
+    "targetType": "skill_version",
+    "targetId": "sv_clarification-question_1.0.2",
+    "tag": "待优化",
+    "note": "改址放行窗口按 30 分钟写死，建议改为读取仓库截单时间",
+    "author": "李佳",
+    "createdAt": "2026-10-13T21:39:14.089Z"
+  },
+  {
+    "id": "ann_010",
+    "targetType": "skill_version",
+    "targetId": "sv_conversation-summary_1.0.1",
+    "tag": "知识缺口",
+    "note": "缺少会员日与积分抵扣冲突时的解释话术，知识库需补条目",
+    "author": "陈嘉禾",
+    "createdAt": "2026-10-13T20:47:14.089Z"
+  },
+  {
+    "id": "ann_011",
+    "targetType": "eval_case",
+    "targetId": "ec_002",
+    "tag": "知识缺口",
+    "note": "「食品拆封不退」的例外场景在知识库只有一句话，建议补充 3 个典型场景",
+    "author": "李佳",
+    "createdAt": "2026-10-11T21:05:14.089Z"
+  },
+  {
+    "id": "ann_012",
+    "targetType": "eval_case",
+    "targetId": "ec_011",
+    "tag": "待优化",
+    "note": "断言只校验了生效时间，未校验「锁价」口径，容易漏判",
+    "author": "王思远",
+    "createdAt": "2026-10-17T14:02:14.089Z"
+  },
+  {
+    "id": "ann_013",
+    "targetType": "eval_case",
+    "targetId": "ec_017",
+    "tag": "好案例",
+    "note": "赔偿标准断言覆盖了金额与权限两条硬约束，建议作为模板复用",
+    "author": "周敏",
+    "createdAt": "2026-10-13T13:45:14.089Z"
+  },
+  {
+    "id": "ann_014",
+    "targetType": "ticket",
+    "targetId": "tkt_003",
+    "tag": "合规风险",
+    "note": "用户提到 12315，工单已升级但未同步法务，需补齐升级路径",
+    "author": "周敏",
+    "createdAt": "2026-10-15T01:45:14.089Z"
+  },
+  {
+    "id": "ann_015",
+    "targetType": "ticket",
+    "targetId": "tkt_012",
+    "tag": "好案例",
+    "note": "代可可脂的提问回答得干脆，没有含糊其辞",
+    "author": "陈嘉禾",
+    "createdAt": "2026-10-16T12:03:14.089Z"
+  },
+  {
+    "id": "ann_016",
+    "targetType": "ticket",
+    "targetId": "tkt_019",
+    "tag": "知识缺口",
+    "note": "开封后保存方式在 FAQ 里没有条目，客服只能凭经验回答",
+    "author": "李佳",
+    "createdAt": "2026-10-17T14:02:14.089Z"
+  }
+]

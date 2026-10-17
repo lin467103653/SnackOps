@@ -1,0 +1,31 @@
+{
+  "key": "ticket_handoff",
+  "name": "转人工",
+  "type": "写操作",
+  "riskLevel": "中",
+  "sideEffect": true,
+  "version": "1.5.2",
+  "endpoint": "internal://ticket-service/v1/tickets/{ticketId}/handoff",
+  "input": {
+    "type": "object",
+    "required": ["ticketId", "reason"],
+    "properties": {
+      "ticketId": { "type": "string" },
+      "reason": { "type": "string", "maxLength": 200 },
+      "priority": { "type": "string", "enum": ["低", "中", "高", "紧急"] },
+      "summary": { "type": "string", "description": "交接摘要，必须包含用户诉求与已确认事实" }
+    }
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "assignee": { "type": ["string", "null"] },
+      "slaMinutes": { "type": "number" }
+    }
+  },
+  "guards": {
+    "requireConfirm": true
+  },
+  "timeoutMs": 3000,
+  "notes": "转人工后 Agent 不再回复该会话；重复调用返回当前处理人。"
+}

@@ -1,0 +1,33 @@
+{
+  "key": "refund_create",
+  "name": "发起退款",
+  "type": "写操作",
+  "riskLevel": "高",
+  "sideEffect": true,
+  "version": "2.0.3",
+  "endpoint": "internal://payment-service/v1/refunds",
+  "input": {
+    "type": "object",
+    "required": ["orderNo", "amount", "reason"],
+    "properties": {
+      "orderNo": { "type": "string" },
+      "amount": { "type": "number", "minimum": 0, "description": "退款金额（元），不得超过订单实付" },
+      "reason": { "type": "string", "enum": ["七天无理由", "少发漏发", "商品破损", "质量问题", "协商一致"] }
+    }
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "refundNo": { "type": "string" },
+      "status": { "type": "string", "enum": ["受理中", "成功", "失败"] },
+      "estimatedArrivalDays": { "type": "number" }
+    }
+  },
+  "guards": {
+    "requireConfirm": true,
+    "amountThresholdYuan": 200,
+    "idempotencyKey": "orderNo+amount+reason"
+  },
+  "timeoutMs": 6000,
+  "notes": "超过 200 元必须转人工二次确认；同一订单同一金额 24 小时内只允许调用一次。"
+}

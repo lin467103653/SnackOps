@@ -1,0 +1,68 @@
+[
+  {
+    "id": "tc_001",
+    "toolId": "query_products",
+    "timeoutMs": 2000,
+    "maxRetries": 1,
+    "rateLimitPerMin": 600,
+    "requireConfirm": false,
+    "env": "production",
+    "note": "高频只读，超时后降级为「请提供商品关键词」",
+    "updatedAt": "2026-10-17T14:16:22.797Z"
+  },
+  {
+    "id": "tc_002",
+    "toolId": "query_activities",
+    "timeoutMs": 2000,
+    "maxRetries": 1,
+    "rateLimitPerMin": 300,
+    "requireConfirm": false,
+    "env": "production",
+    "note": "活动变更频繁，缓存 30 秒",
+    "updatedAt": "2026-10-17T13:16:22.797Z"
+  },
+  {
+    "id": "tc_003",
+    "toolId": "query_coupons",
+    "timeoutMs": 2000,
+    "maxRetries": 1,
+    "rateLimitPerMin": 300,
+    "requireConfirm": false,
+    "env": "production",
+    "note": "券状态与库存实时性要求高，不做缓存",
+    "updatedAt": "2026-10-17T12:16:22.797Z"
+  },
+  {
+    "id": "tc_004",
+    "toolId": "calculate_price",
+    "timeoutMs": 1500,
+    "maxRetries": 0,
+    "rateLimitPerMin": 900,
+    "requireConfirm": false,
+    "env": "production",
+    "note": "纯计算，结果需与前端结算页一致",
+    "updatedAt": "2026-10-17T11:16:22.797Z"
+  },
+  {
+    "id": "tc_005",
+    "toolId": "query_orders",
+    "timeoutMs": 2500,
+    "maxRetries": 1,
+    "rateLimitPerMin": 240,
+    "requireConfirm": false,
+    "env": "production",
+    "note": "涉及用户隐私，日志中订单号需脱敏",
+    "updatedAt": "2026-10-17T10:16:22.797Z"
+  },
+  {
+    "id": "tc_006",
+    "toolId": "query_logistics",
+    "timeoutMs": 3000,
+    "maxRetries": 2,
+    "rateLimitPerMin": 180,
+    "requireConfirm": false,
+    "env": "production",
+    "note": "承运商网关不稳定，超时重试 2 次后走兜底话术",
+    "updatedAt": "2026-10-17T09:16:22.797Z"
+  }
+]

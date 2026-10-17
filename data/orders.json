@@ -1,0 +1,710 @@
+[
+  {
+    "id": "ord_001",
+    "orderNo": "SG2026101210007",
+    "userId": "usr_003",
+    "items": [
+      {
+        "productId": "prd_005",
+        "name": "海盐黄油曲奇",
+        "qty": 2,
+        "unitPrice": 19.9
+      },
+      {
+        "productId": "prd_009",
+        "name": "白桃乌龙软糖",
+        "qty": 3,
+        "unitPrice": 12.9
+      }
+    ],
+    "amount": 78.5,
+    "discount": 5,
+    "payable": 73.5,
+    "status": "已签收",
+    "channel": "小程序",
+    "address": "上海市浦东新区·张**",
+    "trackingNo": "SF5088799399789",
+    "remark": "希望工作日白天送",
+    "createdAt": "2026-10-12T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "退货中",
+    "afterSalesReason": "外包装压瘪，内袋完好但饼干碎了"
+  },
+  {
+    "id": "ord_002",
+    "orderNo": "SG2026101010144",
+    "userId": "usr_008",
+    "items": [
+      {
+        "productId": "prd_007",
+        "name": "冻干草莓脆",
+        "qty": 2,
+        "unitPrice": 33.9
+      },
+      {
+        "productId": "prd_006",
+        "name": "蔓越莓燕麦软曲奇",
+        "qty": 1,
+        "unitPrice": 22.9
+      }
+    ],
+    "amount": 90.7,
+    "discount": 8,
+    "payable": 82.7,
+    "status": "已签收",
+    "channel": "APP",
+    "address": "浙江省杭州市西湖区·李**",
+    "trackingNo": "ZTO6081121539929",
+    "remark": null,
+    "createdAt": "2026-10-10T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_003",
+    "orderNo": "SG2026100810281",
+    "userId": "usr_004",
+    "items": [
+      {
+        "productId": "prd_001",
+        "name": "蜂蜜黄油夏威夷果",
+        "qty": 2,
+        "unitPrice": 39.9
+      },
+      {
+        "productId": "prd_003",
+        "name": "五香卤汁牛肉干",
+        "qty": 1,
+        "unitPrice": 45.9
+      },
+      {
+        "productId": "prd_008",
+        "name": "芒果干条装",
+        "qty": 2,
+        "unitPrice": 18.9
+      }
+    ],
+    "amount": 163.5,
+    "discount": 10,
+    "payable": 153.5,
+    "status": "已签收",
+    "channel": "小程序",
+    "address": "北京市朝阳区·王**",
+    "trackingNo": "YT9435250548645",
+    "remark": "和上次一样放快递柜",
+    "createdAt": "2026-10-08T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_004",
+    "orderNo": "SG2026101410418",
+    "userId": "usr_002",
+    "items": [
+      {
+        "productId": "prd_003",
+        "name": "五香卤汁牛肉干",
+        "qty": 2,
+        "unitPrice": 45.9
+      },
+      {
+        "productId": "prd_004",
+        "name": "麻辣椒盐鸡肉脯",
+        "qty": 1,
+        "unitPrice": 26.9
+      }
+    ],
+    "amount": 118.7,
+    "discount": 8,
+    "payable": 110.7,
+    "status": "已发货",
+    "channel": "直播间",
+    "address": "四川省成都市武侯区·刘**",
+    "trackingNo": "JD9802234348608",
+    "remark": "直播间下单，麻烦尽快发",
+    "createdAt": "2026-10-14T14:07:14.089Z",
+    "logisticsStatus": "运输中",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_005",
+    "orderNo": "SG2026100610555",
+    "userId": "usr_011",
+    "items": [
+      {
+        "productId": "prd_010",
+        "name": "72% 黑巧薄脆（单条装）",
+        "qty": 6,
+        "unitPrice": 6.9
+      },
+      {
+        "productId": "prd_009",
+        "name": "白桃乌龙软糖",
+        "qty": 4,
+        "unitPrice": 12.9
+      }
+    ],
+    "amount": 93,
+    "discount": 5,
+    "payable": 88,
+    "status": "已签收",
+    "channel": "APP",
+    "address": "广东省广州市天河区·陈**",
+    "trackingNo": "EMS6564758880529",
+    "remark": null,
+    "createdAt": "2026-10-06T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_006",
+    "orderNo": "SG2026101510692",
+    "userId": "usr_001",
+    "items": [
+      {
+        "productId": "prd_001",
+        "name": "蜂蜜黄油夏威夷果",
+        "qty": 1,
+        "unitPrice": 39.9
+      },
+      {
+        "productId": "prd_005",
+        "name": "海盐黄油曲奇",
+        "qty": 1,
+        "unitPrice": 19.9
+      },
+      {
+        "productId": "prd_007",
+        "name": "冻干草莓脆",
+        "qty": 1,
+        "unitPrice": 33.9
+      }
+    ],
+    "amount": 93.7,
+    "discount": 0,
+    "payable": 93.7,
+    "status": "已发货",
+    "channel": "小程序",
+    "address": "湖北省武汉市洪山区·杨**",
+    "trackingNo": "SF8476535167312",
+    "remark": null,
+    "createdAt": "2026-10-15T14:07:14.089Z",
+    "logisticsStatus": "运输中",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_007",
+    "orderNo": "SG2026101110829",
+    "userId": "usr_005",
+    "items": [
+      {
+        "productId": "prd_004",
+        "name": "麻辣椒盐鸡肉脯",
+        "qty": 2,
+        "unitPrice": 26.9
+      },
+      {
+        "productId": "prd_006",
+        "name": "蔓越莓燕麦软曲奇",
+        "qty": 2,
+        "unitPrice": 22.9
+      }
+    ],
+    "amount": 99.6,
+    "discount": 10,
+    "payable": 89.6,
+    "status": "退款中",
+    "channel": "APP",
+    "address": "广东省深圳市南山区·赵**",
+    "trackingNo": "ZTO1881207082420",
+    "remark": "坚果发苦，已申请退款",
+    "createdAt": "2026-10-11T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "退款中",
+    "afterSalesReason": "少发一件赠品"
+  },
+  {
+    "id": "ord_008",
+    "orderNo": "SG2026101310966",
+    "userId": "usr_012",
+    "items": [
+      {
+        "productId": "prd_002",
+        "name": "手剥原味巴旦木",
+        "qty": 1,
+        "unitPrice": 29.9
+      },
+      {
+        "productId": "prd_003",
+        "name": "五香卤汁牛肉干",
+        "qty": 1,
+        "unitPrice": 45.9
+      }
+    ],
+    "amount": 75.8,
+    "discount": 0,
+    "payable": 75.8,
+    "status": "退款中",
+    "channel": "小程序",
+    "address": "陕西省西安市雁塔区·周**",
+    "trackingNo": "YT7609490894479",
+    "remark": "异味问题，要求十倍赔偿",
+    "createdAt": "2026-10-13T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "退款中",
+    "afterSalesReason": "拆封后口感与描述不符"
+  },
+  {
+    "id": "ord_009",
+    "orderNo": "SG2026100911103",
+    "userId": "usr_006",
+    "items": [
+      {
+        "productId": "prd_008",
+        "name": "芒果干条装",
+        "qty": 3,
+        "unitPrice": 18.9
+      }
+    ],
+    "amount": 56.7,
+    "discount": 5,
+    "payable": 51.7,
+    "status": "已退款",
+    "channel": "小程序",
+    "address": "江苏省南京市鼓楼区·吴**",
+    "trackingNo": "JD9242399873444",
+    "remark": "拍重复了，已退款",
+    "createdAt": "2026-10-09T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "已退款",
+    "afterSalesReason": "临期商品，剩余保质期不足 1 个月"
+  },
+  {
+    "id": "ord_010",
+    "orderNo": "SG2026101611240",
+    "userId": "usr_007",
+    "items": [
+      {
+        "productId": "prd_011",
+        "name": "高纤坚果燕麦奶昔粉",
+        "qty": 1,
+        "unitPrice": 59.9
+      },
+      {
+        "productId": "prd_010",
+        "name": "72% 黑巧薄脆（单条装）",
+        "qty": 4,
+        "unitPrice": 6.9
+      }
+    ],
+    "amount": 87.5,
+    "discount": 0,
+    "payable": 87.5,
+    "status": "待发货",
+    "channel": "直播间",
+    "address": "重庆市渝北区·徐**",
+    "trackingNo": null,
+    "remark": "急用，麻烦优先发货",
+    "createdAt": "2026-10-16T14:07:14.089Z",
+    "logisticsStatus": "未发货",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_011",
+    "orderNo": "SG2026101711377",
+    "userId": "usr_009",
+    "items": [
+      {
+        "productId": "prd_001",
+        "name": "蜂蜜黄油夏威夷果",
+        "qty": 1,
+        "unitPrice": 39.9
+      }
+    ],
+    "amount": 39.9,
+    "discount": 0,
+    "payable": 39.9,
+    "status": "待发货",
+    "channel": "直播间",
+    "address": "湖南省长沙市岳麓区·孙**",
+    "trackingNo": null,
+    "remark": null,
+    "createdAt": "2026-10-17T02:07:14.089Z",
+    "logisticsStatus": "未发货",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_012",
+    "orderNo": "SG2026101711514",
+    "userId": "usr_010",
+    "items": [
+      {
+        "productId": "prd_009",
+        "name": "白桃乌龙软糖",
+        "qty": 2,
+        "unitPrice": 12.9
+      },
+      {
+        "productId": "prd_010",
+        "name": "72% 黑巧薄脆（单条装）",
+        "qty": 4,
+        "unitPrice": 6.9
+      }
+    ],
+    "amount": 53.4,
+    "discount": 15,
+    "payable": 38.4,
+    "status": "待付款",
+    "channel": "小程序",
+    "address": "江苏省苏州市工业园区·马**",
+    "trackingNo": null,
+    "remark": "新客首单，地址写错待确认",
+    "createdAt": "2026-10-17T10:07:14.089Z",
+    "logisticsStatus": "未发货",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_013",
+    "orderNo": "SG2026100411651",
+    "userId": "usr_004",
+    "items": [
+      {
+        "productId": "prd_011",
+        "name": "高纤坚果燕麦奶昔粉",
+        "qty": 2,
+        "unitPrice": 59.9
+      },
+      {
+        "productId": "prd_012",
+        "name": "桂圆红枣枸杞谷物礼盒",
+        "qty": 1,
+        "unitPrice": 89.9
+      }
+    ],
+    "amount": 209.7,
+    "discount": 30,
+    "payable": 179.7,
+    "status": "已签收",
+    "channel": "APP",
+    "address": "天津市南开区·朱**",
+    "trackingNo": "YT7968307843664",
+    "remark": "礼盒送人，需要发票",
+    "createdAt": "2026-10-04T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_014",
+    "orderNo": "SG2026100311788",
+    "userId": "usr_002",
+    "items": [
+      {
+        "productId": "prd_003",
+        "name": "五香卤汁牛肉干",
+        "qty": 1,
+        "unitPrice": 45.9
+      },
+      {
+        "productId": "prd_004",
+        "name": "麻辣椒盐鸡肉脯",
+        "qty": 1,
+        "unitPrice": 26.9
+      },
+      {
+        "productId": "prd_006",
+        "name": "蔓越莓燕麦软曲奇",
+        "qty": 1,
+        "unitPrice": 22.9
+      }
+    ],
+    "amount": 95.7,
+    "discount": 0,
+    "payable": 95.7,
+    "status": "已签收",
+    "channel": "小程序",
+    "address": "河南省郑州市金水区·胡**",
+    "trackingNo": "JD4360057449201",
+    "remark": null,
+    "createdAt": "2026-10-03T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "换货中",
+    "afterSalesReason": "临期商品，剩余保质期不足 1 个月"
+  },
+  {
+    "id": "ord_015",
+    "orderNo": "SG2026100711925",
+    "userId": "usr_011",
+    "items": [
+      {
+        "productId": "prd_005",
+        "name": "海盐黄油曲奇",
+        "qty": 4,
+        "unitPrice": 19.9
+      },
+      {
+        "productId": "prd_007",
+        "name": "冻干草莓脆",
+        "qty": 2,
+        "unitPrice": 33.9
+      }
+    ],
+    "amount": 147.4,
+    "discount": 20,
+    "payable": 127.4,
+    "status": "已签收",
+    "channel": "直播间",
+    "address": "安徽省合肥市蜀山区·郭**",
+    "trackingNo": "EMS4145282491808",
+    "remark": "直播间专享券已用",
+    "createdAt": "2026-10-07T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_016",
+    "orderNo": "SG2026101612062",
+    "userId": "usr_001",
+    "items": [
+      {
+        "productId": "prd_007",
+        "name": "冻干草莓脆",
+        "qty": 1,
+        "unitPrice": 33.9
+      },
+      {
+        "productId": "prd_001",
+        "name": "蜂蜜黄油夏威夷果",
+        "qty": 1,
+        "unitPrice": 39.9
+      }
+    ],
+    "amount": 73.8,
+    "discount": 0,
+    "payable": 73.8,
+    "status": "待发货",
+    "channel": "APP",
+    "address": "辽宁省沈阳市和平区·何**",
+    "trackingNo": null,
+    "remark": null,
+    "createdAt": "2026-10-16T12:07:14.089Z",
+    "logisticsStatus": "未发货",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_017",
+    "orderNo": "SG2026100112199",
+    "userId": "usr_003",
+    "items": [
+      {
+        "productId": "prd_005",
+        "name": "海盐黄油曲奇",
+        "qty": 1,
+        "unitPrice": 19.9
+      }
+    ],
+    "amount": 19.9,
+    "discount": 0,
+    "payable": 19.9,
+    "status": "已签收",
+    "channel": "小程序",
+    "address": "上海市徐汇区·高**",
+    "trackingNo": "ZTO1781981490319",
+    "remark": null,
+    "createdAt": "2026-10-01T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_018",
+    "orderNo": "SG2026101512336",
+    "userId": "usr_008",
+    "items": [
+      {
+        "productId": "prd_009",
+        "name": "白桃乌龙软糖",
+        "qty": 5,
+        "unitPrice": 12.9
+      }
+    ],
+    "amount": 64.5,
+    "discount": 0,
+    "payable": 64.5,
+    "status": "已发货",
+    "channel": "小程序",
+    "address": "浙江省宁波市鄞州区·林**",
+    "trackingNo": "YT6542871376033",
+    "remark": null,
+    "createdAt": "2026-10-15T02:07:14.089Z",
+    "logisticsStatus": "派送中",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_019",
+    "orderNo": "SG2026092912473",
+    "userId": "usr_007",
+    "items": [
+      {
+        "productId": "prd_001",
+        "name": "蜂蜜黄油夏威夷果",
+        "qty": 3,
+        "unitPrice": 39.9
+      },
+      {
+        "productId": "prd_003",
+        "name": "五香卤汁牛肉干",
+        "qty": 1,
+        "unitPrice": 45.9
+      }
+    ],
+    "amount": 165.6,
+    "discount": 12,
+    "payable": 153.6,
+    "status": "已签收",
+    "channel": "APP",
+    "address": "福建省厦门市思明区·罗**",
+    "trackingNo": "JD6984625379554",
+    "remark": "预售定金已抵扣",
+    "createdAt": "2026-09-29T14:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_020",
+    "orderNo": "SG2026100912610",
+    "userId": "usr_012",
+    "items": [
+      {
+        "productId": "prd_002",
+        "name": "手剥原味巴旦木",
+        "qty": 2,
+        "unitPrice": 29.9
+      }
+    ],
+    "amount": 59.8,
+    "discount": 0,
+    "payable": 59.8,
+    "status": "已退款",
+    "channel": "小程序",
+    "address": "山东省青岛市市南区·梁**",
+    "trackingNo": "EMS8865102883428",
+    "remark": "退款已到账",
+    "createdAt": "2026-10-09T02:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "已退款",
+    "afterSalesReason": "口味不合，申请退货"
+  },
+  {
+    "id": "ord_021",
+    "orderNo": "SG2026101612747",
+    "userId": "usr_005",
+    "items": [
+      {
+        "productId": "prd_004",
+        "name": "麻辣椒盐鸡肉脯",
+        "qty": 1,
+        "unitPrice": 26.9
+      }
+    ],
+    "amount": 26.9,
+    "discount": 0,
+    "payable": 26.9,
+    "status": "待发货",
+    "channel": "直播间",
+    "address": "四川省成都市锦江区·宋**",
+    "trackingNo": null,
+    "remark": "预售商品，等 11 月发货",
+    "createdAt": "2026-10-16T08:07:14.089Z",
+    "logisticsStatus": "未发货",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_022",
+    "orderNo": "SG2026101212884",
+    "userId": "usr_006",
+    "items": [
+      {
+        "productId": "prd_008",
+        "name": "芒果干条装",
+        "qty": 1,
+        "unitPrice": 18.9
+      }
+    ],
+    "amount": 18.9,
+    "discount": 0,
+    "payable": 18.9,
+    "status": "已取消",
+    "channel": "小程序",
+    "address": "广东省佛山市禅城区·唐**",
+    "trackingNo": null,
+    "remark": "用户主动取消",
+    "createdAt": "2026-10-12T14:07:14.089Z",
+    "logisticsStatus": "未发货",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  },
+  {
+    "id": "ord_023",
+    "orderNo": "SG2026101113021",
+    "userId": "usr_009",
+    "items": [
+      {
+        "productId": "prd_007",
+        "name": "冻干草莓脆",
+        "qty": 2,
+        "unitPrice": 33.9
+      }
+    ],
+    "amount": 67.8,
+    "discount": 0,
+    "payable": 67.8,
+    "status": "已签收",
+    "channel": "小程序",
+    "address": "江苏省无锡市滨湖区·许**",
+    "trackingNo": "YT1021345891058",
+    "remark": null,
+    "createdAt": "2026-10-11T08:07:14.089Z",
+    "logisticsStatus": "已签收",
+    "afterSalesStatus": "退货中",
+    "afterSalesReason": "拆封后口感与描述不符"
+  },
+  {
+    "id": "ord_024",
+    "orderNo": "SG2026101513158",
+    "userId": "usr_010",
+    "items": [
+      {
+        "productId": "prd_010",
+        "name": "72% 黑巧薄脆（单条装）",
+        "qty": 2,
+        "unitPrice": 6.9
+      }
+    ],
+    "amount": 13.8,
+    "discount": 0,
+    "payable": 13.8,
+    "status": "已取消",
+    "channel": "APP",
+    "address": "北京市海淀区·韩**",
+    "trackingNo": null,
+    "remark": "超时未支付自动取消",
+    "createdAt": "2026-10-15T12:07:14.089Z",
+    "logisticsStatus": "未发货",
+    "afterSalesStatus": "无",
+    "afterSalesReason": null
+  }
+]

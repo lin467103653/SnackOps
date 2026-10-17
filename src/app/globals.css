@@ -1,0 +1,191 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * SnackOps 视觉基调：
+ * - 浅暖底色 + 深色正文，长时间盯盘不刺眼；
+ * - 强调色只用在「需要行动」的地方（焦糖橙），其余靠层级与边框；
+ * - 圆角适中（0.75rem），不做卡片套卡片。
+ */
+:root {
+  --radius: 0.75rem;
+
+  --background: oklch(0.984 0.006 84);
+  --foreground: oklch(0.245 0.016 62);
+
+  --card: oklch(0.998 0.002 90);
+  --card-foreground: oklch(0.245 0.016 62);
+
+  --popover: oklch(0.998 0.002 90);
+  --popover-foreground: oklch(0.245 0.016 62);
+
+  --primary: oklch(0.628 0.152 52);
+  --primary-foreground: oklch(0.99 0.008 85);
+
+  --secondary: oklch(0.958 0.012 82);
+  --secondary-foreground: oklch(0.335 0.022 62);
+
+  --muted: oklch(0.962 0.008 84);
+  --muted-foreground: oklch(0.505 0.018 66);
+
+  --accent: oklch(0.948 0.028 74);
+  --accent-foreground: oklch(0.33 0.04 56);
+
+  --destructive: oklch(0.575 0.176 26);
+  --destructive-foreground: oklch(0.99 0.006 85);
+
+  --border: oklch(0.902 0.01 80);
+  --input: oklch(0.895 0.011 80);
+  --ring: oklch(0.628 0.152 52);
+
+  --chart-1: oklch(0.628 0.152 52);
+  --chart-2: oklch(0.62 0.104 158);
+  --chart-3: oklch(0.55 0.086 248);
+  --chart-4: oklch(0.74 0.128 84);
+  --chart-5: oklch(0.62 0.13 22);
+
+  --sidebar: oklch(0.972 0.008 82);
+  --sidebar-foreground: oklch(0.315 0.018 62);
+  --sidebar-accent: oklch(0.945 0.03 72);
+  --sidebar-border: oklch(0.9 0.01 80);
+}
+
+.dark {
+  --background: oklch(0.205 0.012 62);
+  --foreground: oklch(0.955 0.006 84);
+
+  --card: oklch(0.245 0.014 62);
+  --card-foreground: oklch(0.955 0.006 84);
+
+  --popover: oklch(0.245 0.014 62);
+  --popover-foreground: oklch(0.955 0.006 84);
+
+  --primary: oklch(0.708 0.146 58);
+  --primary-foreground: oklch(0.2 0.02 60);
+
+  --secondary: oklch(0.295 0.014 62);
+  --secondary-foreground: oklch(0.945 0.006 84);
+
+  --muted: oklch(0.285 0.012 62);
+  --muted-foreground: oklch(0.72 0.012 76);
+
+  --accent: oklch(0.315 0.026 68);
+  --accent-foreground: oklch(0.955 0.006 84);
+
+  --destructive: oklch(0.62 0.17 26);
+  --destructive-foreground: oklch(0.98 0.006 85);
+
+  --border: oklch(0.335 0.012 62);
+  --input: oklch(0.355 0.014 62);
+  --ring: oklch(0.708 0.146 58);
+
+  --chart-1: oklch(0.708 0.146 58);
+  --chart-2: oklch(0.69 0.11 158);
+  --chart-3: oklch(0.63 0.09 248);
+  --chart-4: oklch(0.78 0.12 84);
+  --chart-5: oklch(0.68 0.13 22);
+
+  --sidebar: oklch(0.23 0.013 62);
+  --sidebar-foreground: oklch(0.93 0.006 84);
+  --sidebar-accent: oklch(0.3 0.026 68);
+  --sidebar-border: oklch(0.32 0.012 62);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-border: var(--sidebar-border);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", "Cascadia Mono", Consolas, monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--primary) 24%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  /* 数字列统一等宽对齐，表格扫读更快 */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+
+  .scroll-area-thin {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in oklab, var(--muted-foreground) 35%, transparent) transparent;
+  }
+
+  .scroll-area-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scroll-area-thin::-webkit-scrollbar-thumb {
+    background-color: color-mix(in oklab, var(--muted-foreground) 30%, transparent);
+    border-radius: 999px;
+  }
+}
+
+/* 运行趋势图：去掉 recharts 默认的黑色焦点描边 */
+.recharts-surface:focus,
+.recharts-wrapper:focus {
+  outline: none;
+}

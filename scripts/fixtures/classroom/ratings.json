@@ -1,0 +1,218 @@
+[
+  {
+    "id": "rat_001",
+    "runId": "run_001",
+    "score": 5,
+    "dimension": "准确性",
+    "comment": "库存与保质期信息核对无误",
+    "reviewer": "质检-王思远",
+    "createdAt": "2026-10-04T06:26:19.000Z"
+  },
+  {
+    "id": "rat_002",
+    "runId": "run_002",
+    "score": 4,
+    "dimension": "语气",
+    "comment": "语气自然，像真人客服",
+    "reviewer": "质检-周敏",
+    "createdAt": "2026-10-04T12:10:26.000Z"
+  },
+  {
+    "id": "rat_003",
+    "runId": "run_005",
+    "score": 3,
+    "dimension": "效率",
+    "comment": "工具超时导致链路中断",
+    "reviewer": "组长-李佳",
+    "createdAt": "2026-10-05T17:24:41.000Z"
+  },
+  {
+    "id": "rat_004",
+    "runId": "run_006",
+    "score": 3,
+    "dimension": "合规",
+    "comment": "风险提示到位，没有越界承诺",
+    "reviewer": "运营-陈嘉禾",
+    "createdAt": "2026-10-05T08:40:17.000Z"
+  },
+  {
+    "id": "rat_005",
+    "runId": "run_007",
+    "score": 3,
+    "dimension": "准确性",
+    "comment": "政策条款引用准确，金额算得对",
+    "reviewer": "客服主管-赵宁",
+    "createdAt": "2026-10-06T05:09:07.000Z"
+  },
+  {
+    "id": "rat_006",
+    "runId": "run_008",
+    "score": 2,
+    "dimension": "语气",
+    "comment": "用户情绪未被接住就转人工",
+    "reviewer": "质检-王思远",
+    "createdAt": "2026-10-06T11:49:33.000Z"
+  },
+  {
+    "id": "rat_007",
+    "runId": "run_010",
+    "score": 5,
+    "dimension": "效率",
+    "comment": "耗时低于 3 秒，体验流畅",
+    "reviewer": "质检-周敏",
+    "createdAt": "2026-10-07T13:47:57.000Z"
+  },
+  {
+    "id": "rat_008",
+    "runId": "run_011",
+    "score": 5,
+    "dimension": "合规",
+    "comment": "退款话术与政策版本一致",
+    "reviewer": "组长-李佳",
+    "createdAt": "2026-10-08T19:09:53.000Z"
+  },
+  {
+    "id": "rat_009",
+    "runId": "run_012",
+    "score": 2,
+    "dimension": "准确性",
+    "comment": "政策版本引用错误，导致方案不可执行",
+    "reviewer": "运营-陈嘉禾",
+    "createdAt": "2026-10-09T12:46:40.000Z"
+  },
+  {
+    "id": "rat_010",
+    "runId": "run_013",
+    "score": 5,
+    "dimension": "语气",
+    "comment": "称呼得体，结尾主动跟进",
+    "reviewer": "客服主管-赵宁",
+    "createdAt": "2026-10-09T12:25:22.000Z"
+  },
+  {
+    "id": "rat_011",
+    "runId": "run_015",
+    "score": 5,
+    "dimension": "效率",
+    "comment": "一次命中知识库，链路干净",
+    "reviewer": "质检-王思远",
+    "createdAt": "2026-10-11T04:18:02.000Z"
+  },
+  {
+    "id": "rat_012",
+    "runId": "run_019",
+    "score": 2,
+    "dimension": "合规",
+    "comment": "高金额退款转人工，合规处理正确",
+    "reviewer": "质检-周敏",
+    "createdAt": "2026-10-13T10:35:34.000Z"
+  },
+  {
+    "id": "rat_013",
+    "runId": "run_020",
+    "score": 1,
+    "dimension": "准确性",
+    "comment": "政策版本引用错误，导致方案不可执行",
+    "reviewer": "组长-李佳",
+    "createdAt": "2026-10-14T11:51:28.000Z"
+  },
+  {
+    "id": "rat_014",
+    "runId": "run_021",
+    "score": 4,
+    "dimension": "语气",
+    "comment": "称呼得体，结尾主动跟进",
+    "reviewer": "运营-陈嘉禾",
+    "createdAt": "2026-10-15T00:51:14.089Z"
+  },
+  {
+    "id": "rat_015",
+    "runId": "run_022",
+    "score": 5,
+    "dimension": "效率",
+    "comment": "耗时低于 3 秒，体验流畅",
+    "reviewer": "客服主管-赵宁",
+    "createdAt": "2026-10-15T04:30:14.089Z"
+  },
+  {
+    "id": "rat_016",
+    "runId": "run_023",
+    "score": 1,
+    "dimension": "合规",
+    "comment": "险些承诺十倍赔偿，属合规风险",
+    "reviewer": "质检-王思远",
+    "createdAt": "2026-10-15T10:08:14.089Z"
+  },
+  {
+    "id": "rat_017",
+    "runId": "run_024",
+    "score": 5,
+    "dimension": "准确性",
+    "comment": "政策条款引用准确，金额算得对",
+    "reviewer": "质检-周敏",
+    "createdAt": "2026-10-15T13:21:14.089Z"
+  },
+  {
+    "id": "rat_018",
+    "runId": "run_025",
+    "score": 5,
+    "dimension": "语气",
+    "comment": "称呼得体，结尾主动跟进",
+    "reviewer": "组长-李佳",
+    "createdAt": "2026-10-15T15:31:14.089Z"
+  },
+  {
+    "id": "rat_019",
+    "runId": "run_029",
+    "score": 3,
+    "dimension": "效率",
+    "comment": "耗时低于 3 秒，体验流畅",
+    "reviewer": "运营-陈嘉禾",
+    "createdAt": "2026-10-16T01:40:14.089Z"
+  },
+  {
+    "id": "rat_020",
+    "runId": "run_031",
+    "score": 4,
+    "dimension": "合规",
+    "comment": "退款话术与政策版本一致",
+    "reviewer": "客服主管-赵宁",
+    "createdAt": "2026-10-16T11:40:14.089Z"
+  },
+  {
+    "id": "rat_021",
+    "runId": "run_032",
+    "score": 4,
+    "dimension": "准确性",
+    "comment": "券规则解释清楚，没有过度承诺",
+    "reviewer": "质检-王思远",
+    "createdAt": "2026-10-16T12:33:14.089Z"
+  },
+  {
+    "id": "rat_022",
+    "runId": "run_034",
+    "score": 4,
+    "dimension": "语气",
+    "comment": "安抚到位，没有模板味",
+    "reviewer": "质检-周敏",
+    "createdAt": "2026-10-16T22:54:14.089Z"
+  },
+  {
+    "id": "rat_023",
+    "runId": "run_037",
+    "score": 4,
+    "dimension": "效率",
+    "comment": "耗时低于 3 秒，体验流畅",
+    "reviewer": "组长-李佳",
+    "createdAt": "2026-10-17T13:00:14.089Z"
+  },
+  {
+    "id": "rat_024",
+    "runId": "run_040",
+    "score": 5,
+    "dimension": "合规",
+    "comment": "未承诺超权限赔付，符合规范",
+    "reviewer": "运营-陈嘉禾",
+    "createdAt": "2026-10-17T13:16:14.089Z"
+  }
+]

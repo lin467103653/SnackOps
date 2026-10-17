@@ -1,0 +1,28 @@
+{
+  "key": "order_lookup",
+  "name": "订单查询",
+  "type": "查询",
+  "riskLevel": "低",
+  "sideEffect": false,
+  "version": "1.3.0",
+  "endpoint": "internal://order-service/v1/orders/{orderNo}",
+  "input": {
+    "type": "object",
+    "required": ["orderNo"],
+    "properties": {
+      "orderNo": { "type": "string", "description": "订单号，例如 SG2026101200043" }
+    }
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "status": { "type": "string", "enum": ["待付款", "待发货", "已发货", "已签收", "退款中", "已退款", "已取消"] },
+      "payable": { "type": "number" },
+      "items": { "type": "array" },
+      "signedAt": { "type": ["string", "null"] }
+    }
+  },
+  "timeoutMs": 2500,
+  "cacheTtlSec": 30,
+  "notes": "只读接口，可缓存 30 秒；订单号为空时直接用用户会话里的最近订单。"
+}

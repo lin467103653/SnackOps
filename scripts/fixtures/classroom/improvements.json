@@ -1,0 +1,173 @@
+[
+  {
+    "id": "imp_001",
+    "title": "退款金额超 500 元强制二次确认",
+    "source": "badcase",
+    "skillKey": "after-sales-classification",
+    "priority": "P0",
+    "status": "进行中",
+    "owner": "周敏",
+    "expectedGain": "预计减少 18% 的重复追问",
+    "createdAt": "2026-10-11T14:07:14.089Z",
+    "dueAt": "2026-10-23T14:07:14.089Z",
+    "linkedRuns": [
+      "run_003",
+      "run_012"
+    ]
+  },
+  {
+    "id": "imp_002",
+    "title": "物流接口超时的兜底话术与自动重试",
+    "source": "badcase",
+    "skillKey": "human-handoff-decision",
+    "priority": "P0",
+    "status": "已排期",
+    "owner": "李佳",
+    "expectedGain": "预计把超时导致的人工接管率从 12% 降到 5%",
+    "createdAt": "2026-10-09T14:07:14.089Z",
+    "dueAt": "2026-10-26T14:07:14.089Z",
+    "linkedRuns": [
+      "run_005",
+      "run_014"
+    ]
+  },
+  {
+    "id": "imp_003",
+    "title": "过敏原话术补充「生产线可能接触花生」提示",
+    "source": "annotation",
+    "skillKey": "recommendation-decision",
+    "priority": "P1",
+    "status": "已上线",
+    "owner": "陈嘉禾",
+    "expectedGain": "预计减少 30% 的过敏原追问",
+    "createdAt": "2026-10-05T14:07:14.089Z",
+    "dueAt": "2026-10-20T14:07:14.089Z",
+    "linkedRuns": [
+      "run_008"
+    ]
+  },
+  {
+    "id": "imp_004",
+    "title": "投诉场景禁止出现具体赔偿倍数",
+    "source": "annotation",
+    "skillKey": "complaint-triage",
+    "priority": "P0",
+    "status": "进行中",
+    "owner": "周敏",
+    "expectedGain": "预计降低 90% 的合规越权风险",
+    "createdAt": "2026-10-13T14:07:14.089Z",
+    "dueAt": "2026-10-22T14:07:14.089Z",
+    "linkedRuns": [
+      "run_008",
+      "run_019"
+    ]
+  },
+  {
+    "id": "imp_005",
+    "title": "优惠券叠加规则结构化，减少多轮澄清",
+    "source": "rating",
+    "skillKey": "recommendation-reason",
+    "priority": "P1",
+    "status": "已排期",
+    "owner": "王思远",
+    "expectedGain": "预计减少 22% 的重复追问",
+    "createdAt": "2026-10-08T14:07:14.089Z",
+    "dueAt": "2026-10-29T14:07:14.089Z",
+    "linkedRuns": []
+  },
+  {
+    "id": "imp_006",
+    "title": "改址放行窗口改为读取仓库截单时间",
+    "source": "annotation",
+    "skillKey": "clarification-question",
+    "priority": "P1",
+    "status": "待评估",
+    "owner": "李佳",
+    "expectedGain": "预计提升 15% 的改址一次成功率",
+    "createdAt": "2026-10-14T14:07:14.089Z",
+    "dueAt": "2026-11-01T14:07:14.089Z",
+    "linkedRuns": []
+  },
+  {
+    "id": "imp_007",
+    "title": "会员积分抵扣话术补齐冲突场景",
+    "source": "eval",
+    "skillKey": "conversation-summary",
+    "priority": "P2",
+    "status": "待评估",
+    "owner": "王思远",
+    "expectedGain": "预计减少 12% 的积分重复咨询",
+    "createdAt": "2026-10-15T14:07:14.089Z",
+    "dueAt": "2026-11-04T14:07:14.089Z",
+    "linkedRuns": []
+  },
+  {
+    "id": "imp_008",
+    "title": "售前团购阶梯价知识条目补齐",
+    "source": "eval",
+    "skillKey": "need-extraction",
+    "priority": "P2",
+    "status": "已驳回",
+    "owner": "李佳",
+    "expectedGain": "预计带来 5% 的团购留资提升",
+    "createdAt": "2026-10-06T14:07:14.089Z",
+    "dueAt": "2026-10-24T14:07:14.089Z",
+    "linkedRuns": []
+  },
+  {
+    "id": "imp_009",
+    "title": "情绪升级二级预警接入风控看板",
+    "source": "rating",
+    "skillKey": "complaint-triage",
+    "priority": "P1",
+    "status": "进行中",
+    "owner": "周敏",
+    "expectedGain": "预计把高风险投诉的响应时间缩短 40%",
+    "createdAt": "2026-10-12T14:07:14.089Z",
+    "dueAt": "2026-10-27T14:07:14.089Z",
+    "linkedRuns": [
+      "run_008"
+    ]
+  },
+  {
+    "id": "imp_010",
+    "title": "催发货场景前置收集订单号，减少一轮追问",
+    "source": "badcase",
+    "skillKey": "human-handoff-decision",
+    "priority": "P2",
+    "status": "已上线",
+    "owner": "李佳",
+    "expectedGain": "预计减少 14% 的会话轮次",
+    "createdAt": "2026-10-02T14:07:14.089Z",
+    "dueAt": "2026-10-19T14:07:14.089Z",
+    "linkedRuns": [
+      "run_003"
+    ]
+  },
+  {
+    "id": "imp_011",
+    "title": "退货政策 v3.0 例外项同步进 Skill 提示词",
+    "source": "annotation",
+    "skillKey": "after-sales-classification",
+    "priority": "P1",
+    "status": "已排期",
+    "owner": "王思远",
+    "expectedGain": "预计减少 9% 的政策口径不一致",
+    "createdAt": "2026-10-10T14:07:14.089Z",
+    "dueAt": "2026-10-25T14:07:14.089Z",
+    "linkedRuns": []
+  },
+  {
+    "id": "imp_012",
+    "title": "商品推荐增加「不甜/耐嚼」口味标签映射",
+    "source": "rating",
+    "skillKey": "recommendation-decision",
+    "priority": "P2",
+    "status": "待评估",
+    "owner": "陈嘉禾",
+    "expectedGain": "预计提升 8% 的推荐点击率",
+    "createdAt": "2026-10-16T14:07:14.089Z",
+    "dueAt": "2026-11-06T14:07:14.089Z",
+    "linkedRuns": []
+  }
+]

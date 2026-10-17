@@ -1,0 +1,403 @@
+[
+  {
+    "id": "ec_001",
+    "name": "退款-未拆封 7 天无理由",
+    "skillKey": "after-sales-classification",
+    "intent": "退款退货",
+    "input": "我上周买的坚果还没拆封，能退吗？",
+    "expected": "确认签收时间在 7 天内且包装未拆封，按 7 天无理由流程处理并说明运费由买家承担",
+    "assertions": [
+      "必须引用退货政策 v3.1",
+      "必须说明运费由买家承担",
+      "不得承诺 48 小时内到账"
+    ],
+    "difficulty": "易",
+    "source": "人工编写",
+    "status": "启用",
+    "tags": [
+      "退货",
+      "时效"
+    ],
+    "updatedAt": "2026-10-12T14:07:14.089Z"
+  },
+  {
+    "id": "ec_002",
+    "name": "退款-拆封食品",
+    "skillKey": "after-sales-classification",
+    "intent": "退款退货",
+    "input": "饼干我已经拆开吃了两包，觉得不好吃想退",
+    "expected": "说明食品拆封后不支持无理由退货，并给出变质/异味等例外场景的处理方式",
+    "assertions": [
+      "必须复述「食品拆封不退」",
+      "必须给出至少一个例外场景",
+      "语气不得生硬"
+    ],
+    "difficulty": "中",
+    "source": "线上回流",
+    "status": "启用",
+    "tags": [
+      "拆封",
+      "食品"
+    ],
+    "updatedAt": "2026-10-11T03:07:14.089Z"
+  },
+  {
+    "id": "ec_003",
+    "name": "退款-超过 7 天",
+    "skillKey": "after-sales-classification",
+    "intent": "退款退货",
+    "input": "上个月买的牛肉干还能退吗",
+    "expected": "告知已超出 7 天无理由时效，若为质量问题可按 30 天变质赔付标准受理",
+    "assertions": [
+      "必须说明已超过 7 天",
+      "必须提供质量问题的兜底通道"
+    ],
+    "difficulty": "中",
+    "source": "标注产出",
+    "status": "启用",
+    "tags": [
+      "超时",
+      "兜底"
+    ],
+    "updatedAt": "2026-10-12T21:07:14.089Z"
+  },
+  {
+    "id": "ec_004",
+    "name": "退款-金额超阈值",
+    "skillKey": "after-sales-classification",
+    "intent": "退款退货",
+    "input": "这单 899 元想全退，直接给我退了吧",
+    "expected": "识别金额超过 500 元阈值，说明需要人工复核后再创建退款单",
+    "assertions": [
+      "必须识别 500 元阈值",
+      "必须转人工复核",
+      "不得直接调用 refund_create"
+    ],
+    "difficulty": "难",
+    "source": "线上回流",
+    "status": "启用",
+    "tags": [
+      "阈值",
+      "转人工"
+    ],
+    "updatedAt": "2026-10-16T02:07:14.089Z"
+  },
+  {
+    "id": "ec_005",
+    "name": "催发货-大促延迟",
+    "skillKey": "human-handoff-decision",
+    "intent": "催发货",
+    "input": "双11 买的什么时候发？都三天了",
+    "expected": "说明大促期间 72 小时内发货，查询订单实际状态并给出最晚发货时间",
+    "assertions": [
+      "必须引用大促发货时效",
+      "必须查询订单状态"
+    ],
+    "difficulty": "易",
+    "source": "人工编写",
+    "status": "启用",
+    "tags": [
+      "大促",
+      "时效"
+    ],
+    "updatedAt": "2026-10-11T13:07:14.089Z"
+  },
+  {
+    "id": "ec_006",
+    "name": "催发货-预售商品",
+    "skillKey": "human-handoff-decision",
+    "intent": "催发货",
+    "input": "预售的奶昔粉到底哪天发",
+    "expected": "按预售页面承诺的发货口径回复，并提供预售单查询路径",
+    "assertions": [
+      "必须区分预售与现货",
+      "必须给出查询路径"
+    ],
+    "difficulty": "中",
+    "source": "人工编写",
+    "status": "启用",
+    "tags": [
+      "预售"
+    ],
+    "updatedAt": "2026-10-11T01:07:14.089Z"
+  },
+  {
+    "id": "ec_007",
+    "name": "物流异常-超 24 小时未更新",
+    "skillKey": "human-handoff-decision",
+    "intent": "物流异常",
+    "input": "物流三天没动了，是丢件了吗",
+    "expected": "查询最新节点，说明延误时长与预计到达时间，必要时创建物流跟进任务",
+    "assertions": [
+      "必须查询物流节点",
+      "必须给出预计到达时间"
+    ],
+    "difficulty": "中",
+    "source": "线上回流",
+    "status": "启用",
+    "tags": [
+      "延误",
+      "跟进"
+    ],
+    "updatedAt": "2026-10-14T03:07:14.089Z"
+  },
+  {
+    "id": "ec_008",
+    "name": "物流异常-显示签收未收到",
+    "skillKey": "human-handoff-decision",
+    "intent": "物流异常",
+    "input": "显示签收但我没收到，包裹可能丢了",
+    "expected": "安抚并核实签收人，说明 48 小时内联系网点核实，必要时补发",
+    "assertions": [
+      "必须核实签收人",
+      "必须给出 48 小时处理时限"
+    ],
+    "difficulty": "难",
+    "source": "标注产出",
+    "status": "启用",
+    "tags": [
+      "丢件",
+      "安抚"
+    ],
+    "updatedAt": "2026-10-14T16:07:14.089Z"
+  },
+  {
+    "id": "ec_009",
+    "name": "优惠-满减与直播间券叠加",
+    "skillKey": "recommendation-reason",
+    "intent": "优惠咨询",
+    "input": "满199减30和直播间券能一起用吗",
+    "expected": "说明两张券不可叠加，给出更优惠的下单组合建议",
+    "assertions": [
+      "必须明确不可叠加",
+      "必须给出替代组合"
+    ],
+    "difficulty": "易",
+    "source": "人工编写",
+    "status": "启用",
+    "tags": [
+      "叠加",
+      "券规则"
+    ],
+    "updatedAt": "2026-10-13T21:07:14.089Z"
+  },
+  {
+    "id": "ec_010",
+    "name": "优惠-券失效原因",
+    "skillKey": "recommendation-reason",
+    "intent": "优惠咨询",
+    "input": "我的券怎么突然不能用了",
+    "expected": "查询券状态与有效期，说明失效原因并给出可用的替代券",
+    "assertions": [
+      "必须查询券状态",
+      "必须给出失效原因"
+    ],
+    "difficulty": "中",
+    "source": "线上回流",
+    "status": "启用",
+    "tags": [
+      "失效"
+    ],
+    "updatedAt": "2026-10-16T00:07:14.089Z"
+  },
+  {
+    "id": "ec_011",
+    "name": "优惠-双11 预热券生效时间",
+    "skillKey": "recommendation-reason",
+    "intent": "优惠咨询",
+    "input": "双11 预热券现在能用吗",
+    "expected": "说明预热券 11 月 1 日生效，可先领券锁价",
+    "assertions": [
+      "必须说明生效时间",
+      "必须说明可提前领取"
+    ],
+    "difficulty": "易",
+    "source": "人工编写",
+    "status": "停用",
+    "tags": [
+      "双11",
+      "锁价"
+    ],
+    "updatedAt": "2026-10-17T08:07:14.089Z"
+  },
+  {
+    "id": "ec_012",
+    "name": "商品-过敏原确认",
+    "skillKey": "recommendation-decision",
+    "intent": "商品咨询",
+    "input": "夏威夷果里面有花生成分吗？孩子花生过敏",
+    "expected": "明确回答过敏原为坚果与乳制品，并提示生产线可能接触花生",
+    "assertions": [
+      "必须列出过敏原",
+      "必须提示生产线交叉风险"
+    ],
+    "difficulty": "中",
+    "source": "标注产出",
+    "status": "启用",
+    "tags": [
+      "过敏原",
+      "合规"
+    ],
+    "updatedAt": "2026-10-17T10:07:14.089Z"
+  },
+  {
+    "id": "ec_013",
+    "name": "商品-保质期与保存",
+    "skillKey": "recommendation-decision",
+    "intent": "商品咨询",
+    "input": "草莓脆保质期多久，开封后怎么保存",
+    "expected": "回答保质期 365 天，说明开封后建议密封并 7 天内吃完",
+    "assertions": [
+      "必须回答保质期天数",
+      "必须给出保存建议"
+    ],
+    "difficulty": "易",
+    "source": "人工编写",
+    "status": "启用",
+    "tags": [
+      "保质期"
+    ],
+    "updatedAt": "2026-10-17T01:07:14.089Z"
+  },
+  {
+    "id": "ec_014",
+    "name": "商品-口味推荐",
+    "skillKey": "recommendation-decision",
+    "intent": "商品咨询",
+    "input": "想买点不甜又耐嚼的",
+    "expected": "推荐五香牛肉干与巴旦木，说明口味特点与过敏原",
+    "assertions": [
+      "必须推荐至少 2 个 SKU",
+      "必须说明过敏原"
+    ],
+    "difficulty": "中",
+    "source": "人工编写",
+    "status": "停用",
+    "tags": [
+      "推荐",
+      "口味"
+    ],
+    "updatedAt": "2026-10-12T16:07:14.089Z"
+  },
+  {
+    "id": "ec_015",
+    "name": "改地址-发货前",
+    "skillKey": "clarification-question",
+    "intent": "改地址",
+    "input": "地址写错了，帮我改到公司",
+    "expected": "校验订单未发货后直接改地址并确认新地址",
+    "assertions": [
+      "必须先校验订单状态",
+      "必须复述新地址"
+    ],
+    "difficulty": "中",
+    "source": "线上回流",
+    "status": "启用",
+    "tags": [
+      "改址"
+    ],
+    "updatedAt": "2026-10-17T00:07:14.089Z"
+  },
+  {
+    "id": "ec_016",
+    "name": "改地址-已发货",
+    "skillKey": "clarification-question",
+    "intent": "改地址",
+    "input": "已经发货了还能改地址吗",
+    "expected": "说明已发货无法系统改地址，提供承运商改派方案",
+    "assertions": [
+      "必须说明无法系统改址",
+      "必须给出承运商改派路径"
+    ],
+    "difficulty": "难",
+    "source": "标注产出",
+    "status": "启用",
+    "tags": [
+      "已发货",
+      "改派"
+    ],
+    "updatedAt": "2026-10-16T15:07:14.089Z"
+  },
+  {
+    "id": "ec_017",
+    "name": "投诉-异味赔偿",
+    "skillKey": "complaint-triage",
+    "intent": "投诉",
+    "input": "牛肉干有异味，我要十倍赔偿",
+    "expected": "先安抚并致歉，说明赔付标准为退一赔三（不足 500 按 500），并转人工复核",
+    "assertions": [
+      "必须按退一赔三口径",
+      "必须转人工复核",
+      "不得承诺十倍赔偿"
+    ],
+    "difficulty": "难",
+    "source": "线上回流",
+    "status": "启用",
+    "tags": [
+      "赔付",
+      "投诉"
+    ],
+    "updatedAt": "2026-10-13T08:07:14.089Z"
+  },
+  {
+    "id": "ec_018",
+    "name": "投诉-职业打假风险",
+    "skillKey": "complaint-triage",
+    "intent": "投诉",
+    "input": "你们这个标签不符合国标，我要举报",
+    "expected": "识别高风险投诉，按合规话术回应并立即转人工，不做超权限承诺",
+    "assertions": [
+      "必须识别为高风险",
+      "必须立即转人工",
+      "不得承认或否认违规事实"
+    ],
+    "difficulty": "难",
+    "source": "标注产出",
+    "status": "启用",
+    "tags": [
+      "合规",
+      "职业打假"
+    ],
+    "updatedAt": "2026-10-16T08:07:14.089Z"
+  },
+  {
+    "id": "ec_019",
+    "name": "售前-礼盒团购",
+    "skillKey": "need-extraction",
+    "intent": "商品咨询",
+    "input": "公司团购 50 份礼盒有优惠吗",
+    "expected": "介绍团购阶梯价与开票流程，引导留资转私域",
+    "assertions": [
+      "必须给出阶梯价口径",
+      "必须说明开票流程"
+    ],
+    "difficulty": "中",
+    "source": "人工编写",
+    "status": "启用",
+    "tags": [
+      "团购",
+      "礼盒"
+    ],
+    "updatedAt": "2026-10-11T14:07:14.089Z"
+  },
+  {
+    "id": "ec_020",
+    "name": "会员-积分抵扣",
+    "skillKey": "conversation-summary",
+    "intent": "优惠咨询",
+    "input": "积分能抵现金吗",
+    "expected": "说明 100 积分抵 1 元、黑卡双倍积分、单笔最多抵扣 30%",
+    "assertions": [
+      "必须给出兑换比例",
+      "必须说明抵扣上限"
+    ],
+    "difficulty": "易",
+    "source": "人工编写",
+    "status": "启用",
+    "tags": [
+      "积分",
+      "会员"
+    ],
+    "updatedAt": "2026-10-16T16:07:14.089Z"
+  }
+]

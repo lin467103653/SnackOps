@@ -1,0 +1,403 @@
+[
+  {
+    "id": "usr_001",
+    "nickname": "橘子汽水",
+    "phoneMasked": "138****6621",
+    "level": "银卡",
+    "totalOrders": 14,
+    "totalSpend": 1286.4,
+    "lastOrderAt": "2026-10-15T14:07:14.089Z",
+    "joinedAt": "2025-08-23T14:07:14.089Z",
+    "tags": [
+      "宝妈",
+      "直播间常客"
+    ],
+    "risk": "正常",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "果干蜜饯",
+        "坚果炒货",
+        "饼干糕点"
+      ],
+      "favoriteFlavors": [
+        "酸甜",
+        "奶香",
+        "海盐"
+      ],
+      "avoidAllergens": [
+        "花生"
+      ],
+      "budgetPerOrder": 91.89
+    },
+    "recentOrderNos": [
+      "SG2026101612062",
+      "SG2026101510692"
+    ]
+  },
+  {
+    "id": "usr_002",
+    "nickname": "加班的小林",
+    "phoneMasked": "139****3087",
+    "level": "金卡",
+    "totalOrders": 31,
+    "totalSpend": 4210.6,
+    "lastOrderAt": "2026-10-16T12:07:14.089Z",
+    "joinedAt": "2025-02-14T14:07:14.089Z",
+    "tags": [
+      "重口味",
+      "夜宵党"
+    ],
+    "risk": "正常",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "肉干卤味",
+        "饼干糕点"
+      ],
+      "favoriteFlavors": [
+        "五香",
+        "麻辣",
+        "酸甜"
+      ],
+      "avoidAllergens": [],
+      "budgetPerOrder": 135.83
+    },
+    "recentOrderNos": [
+      "SG2026101410418",
+      "SG2026100311788"
+    ]
+  },
+  {
+    "id": "usr_003",
+    "nickname": "减脂期的阿May",
+    "phoneMasked": "137****9012",
+    "level": "普通",
+    "totalOrders": 6,
+    "totalSpend": 356.2,
+    "lastOrderAt": "2026-10-12T14:07:14.089Z",
+    "joinedAt": "2026-07-13T14:07:14.089Z",
+    "tags": [
+      "控糖",
+      "健身"
+    ],
+    "risk": "正常",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "饼干糕点",
+        "糖巧布丁"
+      ],
+      "favoriteFlavors": [
+        "海盐",
+        "桃香"
+      ],
+      "avoidAllergens": [
+        "麸质",
+        "乳制品"
+      ],
+      "budgetPerOrder": 59.37
+    },
+    "recentOrderNos": [
+      "SG2026101210007",
+      "SG2026100112199"
+    ]
+  },
+  {
+    "id": "usr_004",
+    "nickname": "豆豆妈妈",
+    "phoneMasked": "136****4455",
+    "level": "黑卡",
+    "totalOrders": 68,
+    "totalSpend": 12890,
+    "lastOrderAt": "2026-10-04T14:07:14.089Z",
+    "joinedAt": "2024-05-20T14:07:14.089Z",
+    "tags": [
+      "宝妈",
+      "囤货党",
+      "大促敏感"
+    ],
+    "risk": "正常",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "坚果炒货",
+        "肉干卤味",
+        "果干蜜饯"
+      ],
+      "favoriteFlavors": [
+        "奶香",
+        "五香",
+        "浓甜"
+      ],
+      "avoidAllergens": [
+        "乳制品"
+      ],
+      "budgetPerOrder": 189.56
+    },
+    "recentOrderNos": [
+      "SG2026100810281",
+      "SG2026100411651"
+    ]
+  },
+  {
+    "id": "usr_005",
+    "nickname": "深夜嘴馋星人",
+    "phoneMasked": "135****7789",
+    "level": "银卡",
+    "totalOrders": 19,
+    "totalSpend": 1842.3,
+    "lastOrderAt": "2026-10-16T08:07:14.089Z",
+    "joinedAt": "2025-11-01T14:07:14.089Z",
+    "tags": [
+      "重口味",
+      "夜宵党"
+    ],
+    "risk": "关注",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "肉干卤味",
+        "饼干糕点"
+      ],
+      "favoriteFlavors": [
+        "麻辣",
+        "酸甜"
+      ],
+      "avoidAllergens": [],
+      "budgetPerOrder": 96.96
+    },
+    "recentOrderNos": [
+      "SG2026101612747",
+      "SG2026101110829"
+    ]
+  },
+  {
+    "id": "usr_006",
+    "nickname": "拎得清的阿姨",
+    "phoneMasked": "158****2210",
+    "level": "普通",
+    "totalOrders": 9,
+    "totalSpend": 688,
+    "lastOrderAt": "2026-10-11T14:07:14.089Z",
+    "joinedAt": "2026-03-21T14:07:14.089Z",
+    "tags": [
+      "价格敏感",
+      "退货多"
+    ],
+    "risk": "正常",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "果干蜜饯"
+      ],
+      "favoriteFlavors": [
+        "浓甜"
+      ],
+      "avoidAllergens": [],
+      "budgetPerOrder": 76.44
+    },
+    "recentOrderNos": [
+      "SG2026101212884",
+      "SG2026100911103"
+    ]
+  },
+  {
+    "id": "usr_007",
+    "nickname": "打工人阿凯",
+    "phoneMasked": "150****6634",
+    "level": "金卡",
+    "totalOrders": 22,
+    "totalSpend": 3120.8,
+    "lastOrderAt": "2026-10-16T14:07:14.089Z",
+    "joinedAt": "2025-05-30T14:07:14.089Z",
+    "tags": [
+      "直播间常客",
+      "秒杀党"
+    ],
+    "risk": "正常",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "冲饮谷物",
+        "糖巧布丁",
+        "坚果炒货"
+      ],
+      "favoriteFlavors": [
+        "坚果香",
+        "苦甜",
+        "奶香"
+      ],
+      "avoidAllergens": [],
+      "budgetPerOrder": 141.85
+    },
+    "recentOrderNos": [
+      "SG2026101611240",
+      "SG2026092912473"
+    ]
+  },
+  {
+    "id": "usr_008",
+    "nickname": "甜品控小鹿",
+    "phoneMasked": "186****1122",
+    "level": "银卡",
+    "totalOrders": 11,
+    "totalSpend": 998.5,
+    "lastOrderAt": "2026-10-15T02:07:14.089Z",
+    "joinedAt": "2026-01-10T14:07:14.089Z",
+    "tags": [
+      "嗜甜",
+      "爱写评价"
+    ],
+    "risk": "正常",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "糖巧布丁",
+        "果干蜜饯",
+        "饼干糕点"
+      ],
+      "favoriteFlavors": [
+        "桃香",
+        "酸甜"
+      ],
+      "avoidAllergens": [],
+      "budgetPerOrder": 90.77
+    },
+    "recentOrderNos": [
+      "SG2026101512336",
+      "SG2026101010144"
+    ]
+  },
+  {
+    "id": "usr_009",
+    "nickname": "直播间蹲守王",
+    "phoneMasked": "133****9987",
+    "level": "金卡",
+    "totalOrders": 27,
+    "totalSpend": 2680,
+    "lastOrderAt": "2026-10-17T02:07:14.089Z",
+    "joinedAt": "2025-07-04T14:07:14.089Z",
+    "tags": [
+      "直播间常客",
+      "秒杀党"
+    ],
+    "risk": "关注",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "坚果炒货",
+        "果干蜜饯"
+      ],
+      "favoriteFlavors": [
+        "奶香",
+        "酸甜"
+      ],
+      "avoidAllergens": [],
+      "budgetPerOrder": 99.26
+    },
+    "recentOrderNos": [
+      "SG2026101711377",
+      "SG2026101113021"
+    ]
+  },
+  {
+    "id": "usr_010",
+    "nickname": "糯米团子",
+    "phoneMasked": "177****3345",
+    "level": "普通",
+    "totalOrders": 3,
+    "totalSpend": 129.8,
+    "lastOrderAt": "2026-10-17T10:07:14.089Z",
+    "joinedAt": "2026-10-05T14:07:14.089Z",
+    "tags": [
+      "新客",
+      "学生党"
+    ],
+    "risk": "正常",
+    "isNewCustomer": true,
+    "preferences": {
+      "favoriteCategories": [
+        "糖巧布丁"
+      ],
+      "favoriteFlavors": [
+        "桃香",
+        "苦甜"
+      ],
+      "avoidAllergens": [],
+      "budgetPerOrder": 43.27
+    },
+    "recentOrderNos": [
+      "SG2026101711514",
+      "SG2026101513158"
+    ]
+  },
+  {
+    "id": "usr_011",
+    "nickname": "一箱一箱囤",
+    "phoneMasked": "189****5560",
+    "level": "黑卡",
+    "totalOrders": 74,
+    "totalSpend": 15680.5,
+    "lastOrderAt": "2026-10-03T14:07:14.089Z",
+    "joinedAt": "2024-04-10T14:07:14.089Z",
+    "tags": [
+      "囤货党",
+      "大促敏感"
+    ],
+    "risk": "正常",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "饼干糕点",
+        "果干蜜饯",
+        "糖巧布丁"
+      ],
+      "favoriteFlavors": [
+        "海盐",
+        "酸甜",
+        "苦甜"
+      ],
+      "avoidAllergens": [],
+      "budgetPerOrder": 211.9
+    },
+    "recentOrderNos": [
+      "SG2026100711925",
+      "SG2026100610555"
+    ]
+  },
+  {
+    "id": "usr_012",
+    "nickname": "挑剔的老周",
+    "phoneMasked": "130****0071",
+    "level": "银卡",
+    "totalOrders": 8,
+    "totalSpend": 742.6,
+    "lastOrderAt": "2026-10-13T14:07:14.089Z",
+    "joinedAt": "2025-01-15T14:07:14.089Z",
+    "tags": [
+      "职业打假",
+      "投诉史3次"
+    ],
+    "risk": "高风险",
+    "isNewCustomer": false,
+    "preferences": {
+      "favoriteCategories": [
+        "坚果炒货",
+        "肉干卤味"
+      ],
+      "favoriteFlavors": [
+        "原味",
+        "五香"
+      ],
+      "avoidAllergens": [
+        "大豆"
+      ],
+      "budgetPerOrder": 92.83
+    },
+    "recentOrderNos": [
+      "SG2026101310966",
+      "SG2026100912610"
+    ]
+  }
+]

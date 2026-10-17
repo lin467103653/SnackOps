@@ -1,0 +1,492 @@
+[
+  {
+    "id": "prd_001",
+    "sku": "SG-NUT-018",
+    "name": "蜂蜜黄油夏威夷果",
+    "category": "坚果炒货",
+    "price": 39.9,
+    "stock": 820,
+    "shelfLifeDays": 180,
+    "allergens": [
+      "坚果",
+      "乳制品"
+    ],
+    "flavorTags": [
+      "奶香",
+      "酥脆"
+    ],
+    "monthlySales": 1246,
+    "status": "在售",
+    "updatedAt": "2026-10-09T06:07:14.089Z",
+    "flavor": "奶香",
+    "tags": [
+      "招牌",
+      "奶香",
+      "送礼"
+    ],
+    "netWeightG": 208,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "夏威夷果",
+      "蜂蜜",
+      "黄油",
+      "白砂糖",
+      "食用盐"
+    ],
+    "sugarPer100g": 18.5,
+    "caloriesPer100g": 640,
+    "proteinPer100g": 8.2,
+    "fatPer100g": 52,
+    "suitableFor": [
+      "整颗坚果，3 岁以下需成人压碎后喂食"
+    ]
+  },
+  {
+    "id": "prd_002",
+    "sku": "SG-NUT-024",
+    "name": "手剥原味巴旦木",
+    "category": "坚果炒货",
+    "price": 29.9,
+    "stock": 0,
+    "shelfLifeDays": 240,
+    "allergens": [
+      "坚果",
+      "花生"
+    ],
+    "flavorTags": [
+      "原味",
+      "清甜"
+    ],
+    "monthlySales": 986,
+    "status": "缺货",
+    "updatedAt": "2026-10-14T17:07:14.089Z",
+    "flavor": "原味",
+    "tags": [
+      "原味",
+      "高蛋白",
+      "囤货"
+    ],
+    "netWeightG": 250,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "巴旦木",
+      "食用盐"
+    ],
+    "sugarPer100g": 4.2,
+    "caloriesPer100g": 590,
+    "proteinPer100g": 21,
+    "fatPer100g": 48,
+    "suitableFor": [
+      "整颗坚果，3 岁以下需成人压碎后喂食"
+    ]
+  },
+  {
+    "id": "prd_003",
+    "sku": "SG-MEAT-007",
+    "name": "五香卤汁牛肉干",
+    "category": "肉干卤味",
+    "price": 45.9,
+    "stock": 318,
+    "shelfLifeDays": 90,
+    "allergens": [
+      "大豆"
+    ],
+    "flavorTags": [
+      "五香",
+      "咸鲜"
+    ],
+    "monthlySales": 742,
+    "status": "在售",
+    "updatedAt": "2026-10-14T16:07:14.089Z",
+    "flavor": "五香",
+    "tags": [
+      "高蛋白",
+      "下酒",
+      "卤味"
+    ],
+    "netWeightG": 150,
+    "spicyLevel": "微辣",
+    "ingredients": [
+      "牛后腿肉",
+      "生抽",
+      "白砂糖",
+      "香辛料",
+      "食用盐"
+    ],
+    "sugarPer100g": 12,
+    "caloriesPer100g": 380,
+    "proteinPer100g": 42,
+    "fatPer100g": 12,
+    "suitableFor": [
+      "含大豆制品，大豆过敏者禁食"
+    ]
+  },
+  {
+    "id": "prd_004",
+    "sku": "SG-MEAT-015",
+    "name": "麻辣椒盐鸡肉脯",
+    "category": "肉干卤味",
+    "price": 26.9,
+    "stock": 156,
+    "shelfLifeDays": 60,
+    "allergens": [
+      "大豆",
+      "麸质"
+    ],
+    "flavorTags": [
+      "麻辣",
+      "重口"
+    ],
+    "monthlySales": 613,
+    "status": "预售",
+    "updatedAt": "2026-10-13T05:07:14.089Z",
+    "flavor": "麻辣",
+    "tags": [
+      "重口",
+      "夜宵",
+      "高蛋白"
+    ],
+    "netWeightG": 160,
+    "spicyLevel": "重辣",
+    "ingredients": [
+      "鸡胸肉",
+      "辣椒",
+      "花椒",
+      "白砂糖",
+      "食用盐",
+      "小麦淀粉"
+    ],
+    "sugarPer100g": 15,
+    "caloriesPer100g": 410,
+    "proteinPer100g": 36,
+    "fatPer100g": 14,
+    "suitableFor": [
+      "重辣，儿童与肠胃敏感人群慎食"
+    ]
+  },
+  {
+    "id": "prd_005",
+    "sku": "SG-BIS-011",
+    "name": "海盐黄油曲奇",
+    "category": "饼干糕点",
+    "price": 19.9,
+    "stock": 1240,
+    "shelfLifeDays": 120,
+    "allergens": [
+      "麸质",
+      "乳制品"
+    ],
+    "flavorTags": [
+      "海盐",
+      "黄油"
+    ],
+    "monthlySales": 1528,
+    "status": "在售",
+    "updatedAt": "2026-10-10T11:07:14.089Z",
+    "flavor": "海盐",
+    "tags": [
+      "下午茶",
+      "黄油",
+      "分享装"
+    ],
+    "netWeightG": 180,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "小麦粉",
+      "黄油",
+      "白砂糖",
+      "海盐"
+    ],
+    "sugarPer100g": 22,
+    "caloriesPer100g": 510,
+    "proteinPer100g": 6,
+    "fatPer100g": 28,
+    "suitableFor": [
+      "含麸质与乳制品，相关过敏人群禁食"
+    ]
+  },
+  {
+    "id": "prd_006",
+    "sku": "SG-BIS-026",
+    "name": "蔓越莓燕麦软曲奇",
+    "category": "饼干糕点",
+    "price": 22.9,
+    "stock": 96,
+    "shelfLifeDays": 45,
+    "allergens": [
+      "麸质",
+      "乳制品"
+    ],
+    "flavorTags": [
+      "可可",
+      "酸甜"
+    ],
+    "monthlySales": 428,
+    "status": "在售",
+    "updatedAt": "2026-10-12T19:07:14.089Z",
+    "flavor": "酸甜",
+    "tags": [
+      "粗粮",
+      "下午茶",
+      "果干"
+    ],
+    "netWeightG": 200,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "燕麦片",
+      "小麦粉",
+      "蔓越莓干",
+      "黄油",
+      "白砂糖",
+      "可可粉"
+    ],
+    "sugarPer100g": 26,
+    "caloriesPer100g": 470,
+    "proteinPer100g": 6.5,
+    "fatPer100g": 20,
+    "suitableFor": [
+      "含麸质与乳制品，相关过敏人群禁食"
+    ]
+  },
+  {
+    "id": "prd_007",
+    "sku": "SG-FRU-009",
+    "name": "冻干草莓脆",
+    "category": "果干蜜饯",
+    "price": 33.9,
+    "stock": 462,
+    "shelfLifeDays": 365,
+    "allergens": [
+      "无"
+    ],
+    "flavorTags": [
+      "酸甜",
+      "果香"
+    ],
+    "monthlySales": 884,
+    "status": "在售",
+    "updatedAt": "2026-10-08T15:07:14.089Z",
+    "flavor": "酸甜",
+    "tags": [
+      "无添加蔗糖?",
+      "冻干",
+      "轻负担"
+    ],
+    "netWeightG": 60,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "草莓",
+      "白砂糖"
+    ],
+    "sugarPer100g": 58,
+    "caloriesPer100g": 350,
+    "proteinPer100g": 3,
+    "fatPer100g": 2,
+    "suitableFor": [
+      "糖分较高，控糖人群注意单次摄入量"
+    ]
+  },
+  {
+    "id": "prd_008",
+    "sku": "SG-FRU-021",
+    "name": "芒果干条装",
+    "category": "果干蜜饯",
+    "price": 18.9,
+    "stock": 38,
+    "shelfLifeDays": 270,
+    "allergens": [
+      "无"
+    ],
+    "flavorTags": [
+      "浓甜",
+      "果香"
+    ],
+    "monthlySales": 521,
+    "status": "在售",
+    "updatedAt": "2026-10-16T13:07:14.089Z",
+    "flavor": "浓甜",
+    "tags": [
+      "果干",
+      "办公室零食"
+    ],
+    "netWeightG": 100,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "芒果",
+      "白砂糖",
+      "柠檬酸"
+    ],
+    "sugarPer100g": 62,
+    "caloriesPer100g": 340,
+    "proteinPer100g": 2,
+    "fatPer100g": 1.5,
+    "suitableFor": [
+      "糖分较高，糖尿病患者不建议食用"
+    ]
+  },
+  {
+    "id": "prd_009",
+    "sku": "SG-CDY-005",
+    "name": "白桃乌龙软糖",
+    "category": "糖巧布丁",
+    "price": 12.9,
+    "stock": 2160,
+    "shelfLifeDays": 300,
+    "allergens": [
+      "无"
+    ],
+    "flavorTags": [
+      "桃香",
+      "清甜"
+    ],
+    "monthlySales": 2134,
+    "status": "在售",
+    "updatedAt": "2026-10-09T08:07:14.089Z",
+    "flavor": "桃香",
+    "tags": [
+      "软糖",
+      "联名",
+      "学生党"
+    ],
+    "netWeightG": 80,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "麦芽糖浆",
+      "白砂糖",
+      "明胶",
+      "浓缩桃汁",
+      "乌龙茶粉"
+    ],
+    "sugarPer100g": 68,
+    "caloriesPer100g": 330,
+    "proteinPer100g": 4,
+    "fatPer100g": 0.5,
+    "suitableFor": [
+      "3 岁以下幼儿不宜食用，软糖存在噎呛风险"
+    ]
+  },
+  {
+    "id": "prd_010",
+    "sku": "SG-CDY-017",
+    "name": "72% 黑巧薄脆（单条装）",
+    "category": "糖巧布丁",
+    "price": 6.9,
+    "stock": 648,
+    "shelfLifeDays": 365,
+    "allergens": [
+      "乳制品",
+      "大豆"
+    ],
+    "flavorTags": [
+      "苦甜",
+      "可可"
+    ],
+    "monthlySales": 341,
+    "status": "在售",
+    "updatedAt": "2026-10-11T12:07:14.089Z",
+    "flavor": "苦甜",
+    "tags": [
+      "黑巧",
+      "小包装",
+      "控糖"
+    ],
+    "netWeightG": 30,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "可可液块",
+      "白砂糖",
+      "可可脂",
+      "大豆磷脂"
+    ],
+    "sugarPer100g": 28,
+    "caloriesPer100g": 560,
+    "proteinPer100g": 8,
+    "fatPer100g": 38,
+    "suitableFor": [
+      "含可可碱，儿童少量食用；孕妇每日不超过 1 条"
+    ]
+  },
+  {
+    "id": "prd_011",
+    "sku": "SG-CER-003",
+    "name": "高纤坚果燕麦奶昔粉",
+    "category": "冲饮谷物",
+    "price": 59.9,
+    "stock": 214,
+    "shelfLifeDays": 365,
+    "allergens": [
+      "坚果",
+      "乳制品"
+    ],
+    "flavorTags": [
+      "坚果香",
+      "醇厚"
+    ],
+    "monthlySales": 306,
+    "status": "在售",
+    "updatedAt": "2026-10-14T23:07:14.089Z",
+    "flavor": "坚果香",
+    "tags": [
+      "代餐",
+      "高纤",
+      "健身"
+    ],
+    "netWeightG": 500,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "燕麦粉",
+      "乳清蛋白",
+      "巴旦木碎",
+      "白砂糖",
+      "食用盐"
+    ],
+    "sugarPer100g": 20,
+    "caloriesPer100g": 420,
+    "proteinPer100g": 18,
+    "fatPer100g": 14,
+    "suitableFor": [
+      "含坚果与乳制品，冲泡后 2 小时内饮用"
+    ]
+  },
+  {
+    "id": "prd_012",
+    "sku": "SG-CER-012",
+    "name": "桂圆红枣枸杞谷物礼盒",
+    "category": "冲饮谷物",
+    "price": 89.9,
+    "stock": 0,
+    "shelfLifeDays": 300,
+    "allergens": [
+      "无"
+    ],
+    "flavorTags": [
+      "枣香",
+      "微甜"
+    ],
+    "monthlySales": 187,
+    "status": "已下架",
+    "updatedAt": "2026-10-14T00:07:14.089Z",
+    "flavor": "枣香",
+    "tags": [
+      "礼盒",
+      "送礼",
+      "探病"
+    ],
+    "netWeightG": 600,
+    "spicyLevel": "不辣",
+    "ingredients": [
+      "桂圆干",
+      "红枣干",
+      "枸杞",
+      "黑米",
+      "燕麦片"
+    ],
+    "sugarPer100g": 32,
+    "caloriesPer100g": 360,
+    "proteinPer100g": 7,
+    "fatPer100g": 3,
+    "suitableFor": [
+      "孕妇可适量食用，糖分偏高，血糖异常者遵医嘱"
+    ]
+  }
+]

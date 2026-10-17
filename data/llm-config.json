@@ -1,0 +1,21 @@
+{
+  "provider": "classroom-fixture",
+  "defaultModel": "deepseek-chat",
+  "plannerModel": "deepseek-reasoner",
+  "fallbackModel": "qwen-plus",
+  "temperature": 0.3,
+  "maxTokens": 2048,
+  "timeoutMs": 20000,
+  "plannerMaxSteps": 5,
+  "enabledTools": [
+    "query_products",
+    "query_activities",
+    "query_coupons",
+    "calculate_price",
+    "query_orders",
+    "query_logistics"
+  ],
+  "updatedAt": "2026-10-17T15:17:23.658Z",
+  "updatedBy": "值班运营 · 林小满",
+  "notes": "默认模型走 deepseek-chat 控制成本，投诉与复杂退款用 deepseek-reasoner 做规划；refund_create 属于高风险写操作，暂不下发给 Planner，统一由人工审核后执行。"
+}

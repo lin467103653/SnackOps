@@ -1,0 +1,58 @@
+{
+  "name": "snackops",
+  "version": "0.1.0",
+  "private": true,
+  "description": "零食电商客服 Agent 的运营平台：Planner / Skill / Tool / Eval 全链路可观测与可迭代",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "next build",
+    "start": "node scripts/start.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "validate": "pnpm typecheck && pnpm lint",
+    "seed": "node scripts/seed.mjs && node scripts/seed-registry.mjs && node scripts/seed-eval.mjs",
+    "seed:reset": "node scripts/seed.mjs --force && node scripts/seed-registry.mjs",
+    "check:data": "node --experimental-strip-types scripts/check-data.ts",
+    "test:scorer": "node --experimental-strip-types scripts/test-eval-scorer.ts",
+    "classroom:reset": "node scripts/classroom-reset.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.3.1",
+    "@radix-ui/react-label": "^2.1.17",
+    "@radix-ui/react-progress": "^1.2.1",
+    "@radix-ui/react-select": "^2.4.1",
+    "@radix-ui/react-separator": "^1.2.0",
+    "@radix-ui/react-slot": "^1.5.0",
+    "@radix-ui/react-switch": "^1.4.1",
+    "@radix-ui/react-tabs": "^1.2.1",
+    "@radix-ui/react-tooltip": "^1.4.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.59.0",
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "recharts": "^3.10.1",
+    "sonner": "^2.0.8",
+    "tailwind-merge": "^3.7.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.2",
+    "tailwindcss": "^4.3.3",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["unrs-resolver"]
+  }
+}
